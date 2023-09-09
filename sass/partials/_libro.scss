@@ -92,11 +92,14 @@
                               .libroGrande{@include smallDeskMin{
                                                                  width: 533px;
                                                                  padding-right: 11%;
+                                                                 
                                           }
                                 
                                           @include smallMobileMax{
                                                                   width: 290px;
                                           }
+
+                                          
 
                               }  
 
@@ -142,114 +145,7 @@
 
                                 .texto{@include textoMobile
                                        }
-                                
-
-                                .boton {@include smallDeskMin {border: solid $borde map-get($colores , "violeta");;
-                                                                                            border-radius: $radio;
-                                                                                            padding-left: 4%;
-                                                                                            padding-right: 2%;
-                                                                                            overflow: hidden;
-                                                                                            display: flex;
-                                                                                            flex-flow: row wrap;
-                                                                                            justify-content:space-between;
-                                                                                            align-items: center;
-                                                                                            width: 40%;
-                                                                                            height: 12%;
-                                                                                            transition: background-color 1s; 
-                                                                }
-
-                                                                @include smallDeskMax{border: solid $borde map-get($colores , "violeta");;
-                                                                                      border-radius: $radio;
-                                                                                      padding-left: 4%;
-                                                                                      padding-right: 2%;
-                                                                                      overflow: hidden;
-                                                                                      display: flex;
-                                                                                      flex-flow: row wrap;
-                                                                                      justify-content:space-between;
-                                                                                      align-items: center;
-                                                                                      width: 60%;
-                                                                                      height: 12%;
-                                                                }
-
-                                                                @include tabletMax{border: solid $borde map-get($colores , "violeta");;
-                                                                                   border-radius: $radio;
-                                                                                   padding-left: 3%;
-                                                                                   padding-right: 1.5%;
-                                                                                   overflow: hidden;
-                                                                                   display: flex;
-                                                                                   flex-flow: row wrap;
-                                                                                   justify-content:space-between;
-                                                                                   align-items: center;
-                                                                                   width: 33%;
-                                                                                   height: 12%;
-                                                                                    
-                                                                }
-
-
-
-                                                                @include smallMobileMax{border: solid $borde map-get($colores , "violeta");;
-                                                                                        border-radius: $radio;
-                                                                                        padding-left: 3%;
-                                                                                        padding-right: 1.5%;
-                                                                                        overflow: hidden;
-                                                                                        display: flex;
-                                                                                        flex-flow: row wrap;
-                                                                                        justify-content:space-between;
-                                                                                        align-items: center;
-                                                                                        width: 60%;
-                                                                                        height: 12%;
-                                                                }
-
-                                                                @include smallMobileMin{border: solid $borde map-get($colores , "violeta");
-                                                                                        border-radius: $radio;
-                                                                                        padding-left: 3%;
-                                                                                        padding-right: 1.5%;
-                                                                                        overflow: hidden;
-                                                                                        display: flex;
-                                                                                        flex-flow: row wrap;
-                                                                                        justify-content:space-between;
-                                                                                        align-items: center;
-                                                                                        width: 60%;
-                                                                                        height: 12%;
-                                                                }
-
-                                                                &:hover{background-color: map-get($colores , "lila");
-                                                                }
-
-
-
-                                                                .textoBotonIndex{@include smallMin{color: map-get($colores , "violeta");
-                                                                                                   font-family: 'Montserrat';
-                                                                                                   font-size: 1rem;
-                                                                                                   font-weight: bold;
-                                                                                                   font-style: normal;
-                                                                                                   letter-spacing: 0.03rem;
-                                                                                                   text-align: left;
-                                                                                                   text-decoration: none;
-                                                                                                   align-items: center;
-                                                                                }
-
-                                                                                @include smallMax {color: map-get($colores , "violeta");
-                                                                                                   font-family: 'Montserrat';
-                                                                                                   font-size: 1.2rem;
-                                                                                                   font-weight: bold;
-                                                                                                   font-style: normal;
-                                                                                                   letter-spacing: 0.03rem;
-                                                                                                   text-align: left;
-                                                                                                   text-decoration: none;
-                                                                                                   align-items: center;
-                                                                                                   line-height: 1.4rem;
-                                                                                }       
-
-                                                                }
-
-                                                                .flechaDescubri{@include smallMin{height: 70%;}
-
-                                                                                @include smallMax{height: 60%;}
-
-                                                                                
-                                                                }
-                                }
+                            
                    }
             
                 
