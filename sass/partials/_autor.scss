@@ -1,0 +1,284 @@
+@use 'variables';
+    
+.html{font-size: 62.5%;}
+
+/*barra de navegacion*/
+
+.navbar{
+    @include barraNavegacion;
+}
+
+.margenes {margin-left: 30px;
+          margin-right: 30px;
+          overflow: hidden;
+    
+          /*sobre autor*/
+
+          .autor{height: 600px;
+                 display: flex;
+                 flex-direction: row;
+                 justify-content: center;
+                 margin-top: 5%;
+
+                .autorDisplay{display: flex;  
+                              flex-direction: column;  
+                              justify-content: space-between;  
+                              height: 100%;  
+                              padding-left: 0%;  
+                              padding-right: 0%; 
+                              
+
+                       .tituloAutor{@include smallMin{font-family: "hatton"; 
+                                                      font-size: 5rem; 
+                                                      font-weight: bold; 
+                                                      font-style: normal; 
+                                                      text-align: left; 
+                                                      line-height: 6.5rem; 
+                                                      width: 100%; 
+                                    }
+
+                                    @include smallMax{font-family: "hatton"; 
+                                                      font-size: 3.1rem; 
+                                                      font-weight: bold; 
+                                                      font-style: normal; 
+                                                      text-align: left; 
+                                                      line-height: 4rem; 
+                                                      width: 100%; 
+                                    }
+                        } 
+
+                        .detalleAutor{@include smallMin{font-family: "hatton"; 
+                                                        font-size: 2rem; 
+                                                        font-weight: lighter; 
+                                                        font-style: normal; 
+                                                        text-align: left; 
+                                                        line-height: 3rem; 
+                                      }  
+
+                                      @include smallMax{font-family: "hatton"; 
+                                                        font-size: 1.6rem; 
+                                                        font-weight: lighter; 
+                                                        font-style: normal; 
+                                                        text-align: left; 
+                                                        line-height: 2rem; 
+                                      }  
+                        } 
+
+                        .textoAutor{display: flex; 
+                                    flex-direction: column; 
+                                    justify-content: start; 
+                                    width: 95%;  
+
+                                    .textoBold{color: map-get($colores , "violeta");
+                                        font-family: 'Montserrat'; 
+                                        font-size: 1.1rem; 
+                                        font-weight: bold; 
+                                        font-style: normal; 
+                                        letter-spacing: 0.05rem; 
+                                        text-align: left; 
+                                        width: 100%;
+                                        line-height: 1.6rem; 
+                                    } 
+
+                                    .texto{font-family: 'Montserrat'; 
+                                        font-size: 1.1rem; 
+                                        font-weight: normal; 
+                                        font-style: normal; 
+                                        letter-spacing: 0.05rem; 
+                                        text-align: left; 
+                                        width: 100%; 
+                                        line-height: 1.6rem; 
+
+                                    } 
+                        } 
+
+                        
+                } 
+
+                        .imagenAutor{@include smallDeskMin{
+                                     display: grid;
+                                     grid-template-columns: 1fr 1fr ;
+                                     grid-template-rows:1fr 1fr 1fr 1fr 1fr 1fr;
+                                     grid-template-areas: 
+                                     "libroArriba libroAbajo"
+                                     "libroArriba libroAbajo"
+                                     "libroArriba libroAbajo"
+                                     "libroArriba libroAbajo"
+                                     "libroArriba libroAbajo"
+                                     "libroArriba libroAbajo";
+                                     margin-right: 95%;
+
+                                     .libroAbajo{grid-area: libroAabajo;
+                                                grid-column: 1;
+                                                grid-row: 1 / span 3;
+                                                width: 100%;
+                                                height: 100%;
+                                                
+                                                .libroAutorDestacadoAbajo{height: 595px;
+                                                }
+                                     }
+                                     .libroArriba{grid-area: libroArriba;
+                                                  grid-column: 1;
+                                                  grid-row: 2;
+                                                  align-items: center;
+                                                  justify-self: center;
+                                                  
+                                                  .libroAutorDestacadoArriba{height: 500px;
+                                                                             padding-top: 16%;
+
+                                                                             &:hover{transform: scale(1.15,1.15);
+                                                                             }
+
+                                                  }
+
+                                                  .rotate-scale-down {-webkit-animation: rotate-scale-down 0.65s linear 0.5s forwards;
+                                                                      animation: rotate-scale-down 0.65s linear 0.5s forwards;
+                                                  }
+ 
+                                                    @-webkit-keyframes rotate-scale-down {
+
+                                                                                          0% {-webkit-transform: scale(1) rotateZ(0);
+                                                                                              transform: scale(1) rotateZ(0);
+                                                                                          }
+                                                                                          50% {-webkit-transform: scale(0.5) rotateZ(180deg);
+                                                                                               transform: scale(0.5) rotateZ(180deg);
+                                                                                          }
+                                                                                          100% {-webkit-transform: scale(1) rotateZ(360deg);
+                                                                                                transform: scale(1) rotateZ(360deg);
+                                                                                          }
+                                                    }
+                                                    
+                                                    @keyframes rotate-scale-down {
+                                                                                  0% {-webkit-transform: scale(1) rotateZ(0);
+                                                                                      transform: scale(1) rotateZ(0);
+                                                                                  }
+                                                                                  50% {-webkit-transform: scale(0.5) rotateZ(180deg);
+                                                                                       transform: scale(0.5) rotateZ(180deg);
+                                                                                  }
+                                                                                  100% {-webkit-transform: scale(1) rotateZ(360deg);
+                                                                                        transform: scale(1) rotateZ(360deg);
+                                                                                  }
+                                                    }
+  
+                                     }
+                                    }
+                                    
+                                    @include smallDeskMax{
+                                     display: grid;
+                                     grid-template-columns: 1fr 1fr;
+                                     grid-template-rows:1fr 1fr 1fr 1fr 1fr 1fr;
+                                     grid-template-areas: 
+                                     "libroArriba libroAbajo"
+                                     "libroArriba libroAbajo"
+                                     "libroArriba libroAbajo"
+                                     "libroArriba libroAbajo"
+                                     "libroArriba libroAbajo"
+                                     "libroArriba libroAbajo";
+                                     margin-left: 10%;
+
+                                     .libroAbajo{grid-area: libroAabajo;
+                                                grid-column: 1;
+                                                grid-row: 1 / span 3;
+                                                width: 100%;
+                                                height: 100%;
+                                                
+                                                .libroAutorDestacadoAbajo{height: 595px;
+                                                }
+                                     }
+                                     .libroArriba{grid-area: libroArriba;
+                                                  grid-column: 1;
+                                                  grid-row: 2;
+                                                  align-items: center;
+                                                  justify-self: center;
+                                                  
+                                                  .libroAutorDestacadoArriba{height: 500px;
+                                                                             padding-top: 18%;
+
+                                                  }
+                                     }
+                                    }
+                        }             
+                }        
+  
+                
+          /*libros del autor*/
+
+          .grillaLibrosAutor{display: flex;
+                            flex-flow: row wrap;
+                            justify-content: space-around;
+                            align-items: start;
+                            margin-top: 11%;
+
+                            
+                .librosAutor{@include tabletMin{list-style-type: none;
+                                                font-family: "hatton";
+                                                font-size: 3rem;
+                                                font-weight: normal;
+                                                font-style: normal;
+                                                text-align: left;
+                                                text-decoration: none;
+                                                color: map-get($colores , "negro");
+                                                transition: all 0.3s; 
+                                                
+                            }
+                            @include tabletMax{list-style-type: none;
+                                                font-family: "hatton";
+                                                font-size: 2.3rem;
+                                                font-weight: normal;
+                                                font-style: normal;
+                                                text-align: left;
+                                                text-decoration: none;
+                                                 
+                            }
+
+                            &:hover{color: map-get($colores , "violeta");
+                            }
+
+                            &:active{font-weight: bold;
+                                     font-size: 2.5rem;
+                                     margin-top: 0.4%;
+                            }
+
+                }
+           }
+
+
+          /*video autor*/
+ 
+          .video{margin-bottom: 7%;
+
+                .seccionGrilla{display: flex;
+                               flex-flow: row wrap;
+                               justify-content: space-between;
+                               margin-top: 125px;
+                                                    
+                               .subtitulo{
+                                         @include subtitulo;
+                                }
+
+                                .textoGrill{@include tabletMin{
+                                                              width: 39.7%;
+                                            }
+
+                                            @include tabletMax{
+                                                               width: 77.7%;
+                                            }
+
+                                            .texto{
+                                                   @include texto;
+                                            }
+                                }
+
+                
+                }
+           }     
+}
+
+/*footer*/
+
+.footer {
+    @include footer;
+}
+
+
+

@@ -1,0 +1,199 @@
+@use 'variables';
+    
+.html{font-size: 62.5%;}
+
+/*barra de navegacion*/
+
+.navbar{
+        @include barraNavegacion;
+}
+
+
+.col {margin-top: 6%;
+      margin-bottom: 6%;
+
+      /*titulo*/
+
+      .tituloPrincipalTop{@include tabletMin{grid-area: tituloTop;
+                                            font-family: "hatton";
+                                            font-size: 9rem;
+                                            font-weight: bold;
+                                            font-style: normal;
+                                            text-align: left;
+                                            line-height: 10.5rem;
+                                            width: 77%;
+                          }
+
+                          @include tabletMax{grid-area: tituloTop;
+                                font-family: "hatton";
+                                font-size: 6rem;
+                                font-weight: bold;
+                                font-style: normal;
+                                text-align: left;
+                                line-height:7.5rem;
+                                width: 77%;
+              }
+        }
+
+        /*TOP10*/
+
+        .card-img-overlay{
+                        @include smallMin
+                               {background-color: map-get($colores , "negro");
+                                height: 40%;
+                                width: 55%;
+                                padding:5%;
+                                display: flex;
+                                flex-flow: column;
+                                justify-content:space-between;
+                                align-items: start;
+                                align-self: end;
+                                margin-top: 83%;
+                                margin-left: 45%;
+                                transition: transform 2s;
+
+                                &:hover{transform: scale(1.1,1.1);}
+                                
+                        }
+            
+                        @include smallMax
+                                {background-color: map-get($colores , "negro");
+                                height: 45%;
+                                width: 55%;
+                                padding:5%;
+                                display: flex;
+                                flex-flow: column;
+                                justify-content:space-between;
+                                align-items: start;
+                                align-self: end;
+                                margin-top: 76%;
+                                margin-left: 45%;
+                        }
+
+                        &
+
+                        .subtituloTop{
+                            @include mobileMin
+                                    {font-family: "hatton";
+                                    font-size: 1.8rem;
+                                    font-weight: bold;
+                                    font-style: normal;
+                                    text-align: left;
+                                    margin-bottom: 5%;
+                                    
+                            }
+                        
+                            @include mobileMax
+                                   {font-family: "hatton";
+                                    font-size: 1.1rem;
+                                    font-weight: bold;
+                                    font-style: normal;
+                                    text-align: left;
+                                    margin-bottom: 5%;
+                                    line-height: 1.7rem;
+                            }
+                        }
+
+                        .textoChico{
+                                   @include mobileMin
+                                          {font-family: 'Montserrat';
+                                          font-size: 1.3rem;
+                                          font-weight: normal;
+                                          font-style: normal;
+                                          letter-spacing: 0.05rem;
+                                          text-align: left;
+                                          line-height: 2.3rem;
+                                   }
+
+                                   @include mobileMax
+                                          {font-family: 'Montserrat';
+                                          font-size: 0.9rem;
+                                          font-weight: normal;
+                                          font-style: normal;
+                                          letter-spacing: 0.05rem;
+                                          text-align: left;
+                                          line-height: 1.2rem;
+                                   }
+
+                        }
+
+                        
+
+
+                        .botonTop{
+                                  @include mobileMin      
+                                         {background-color: map-get($colores , "blanco");
+                                          border-radius: $radio;
+                                          padding-left: 6%;
+                                          padding-right: 3%;
+                                          overflow: hidden;
+                                          display: flex;
+                                          flex-flow: row wrap;
+                                          justify-content:space-between;
+                                          align-items: center;
+                                          width: 80%;
+                                          height: 16%;
+                                          transition: background-color 1s, height 0.5s, width 0.5s;
+                                  }
+                                
+                                @include mobileMax
+                                       {background-color: map-get($colores , "blanco");
+                                        border-radius: $radio;
+                                        padding-left: 6%;
+                                        padding-right: 3%;
+                                        overflow: hidden;
+                                        display: flex;
+                                        flex-flow: row wrap;
+                                        justify-content:space-between;
+                                        align-items: center;
+                                        width: 72%;
+                                        height: 16%;
+                                        
+                                }
+                                
+                                &:hover{background-color: map-get($colores , "lila");
+                                }
+
+                                &:active{height: 18%;
+                                        width: 88%;
+                                }
+
+                                    .textoBoton{@include mobileMin {color: map-get($colores , "violeta");
+                                                                    font-family: 'Montserrat';
+                                                                    font-size: 1.1rem;
+                                                                    font-weight: bold;
+                                                                    font-style: normal;
+                                                                    letter-spacing: 0.03rem;
+                                                                    text-align: left;
+                                                                    text-decoration: none;
+                                                                    align-items: center;
+                                                }
+
+                                                @include mobileMax {color: map-get($colores , "violeta");
+                                                                    font-family: 'Montserrat';
+                                                                    font-size: 0.9rem;
+                                                                    font-weight: bold;
+                                                                    font-style: normal;
+                                                                    letter-spacing: 0.03rem;
+                                                                    text-align: left;
+                                                                    text-decoration: none;
+                                                                    align-items: center;
+                                                }
+                                     }  
+
+                                  .flechaChica{width: 20%;
+                                   }
+                        }  
+      } 
+       
+}
+
+/*footer*/
+
+.footer {
+        @include footer;
+}
+
+            
+
+

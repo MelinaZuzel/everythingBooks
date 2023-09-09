@@ -1,0 +1,423 @@
+@use 'variables';
+    
+.html{font-size: 62.5%;}
+
+
+/*barra de navegacion*/    
+    
+.navbar{
+        @include barraNavegacion;
+}
+
+
+
+.margenes {margin-left: 30px;
+           margin-right: 30px;
+           overflow: hidden;
+
+      
+        /*inicio de pagina*/
+
+        .inicio {@include tabletMin {grid-area: main;    
+                                  display: grid;
+                                  grid-template-areas: 
+                                  "titulo titulo libro libro"
+                                  "titulo titulo libro libro"
+                                  "titulo titulo libro libro"
+                                  ". . libro libro"
+                                  "detalle detalle libro libro";
+                                  grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+                                  height: 766px;
+                                  padding-top: 3%;
+                                  overflow: hidden;
+                } 
+        
+
+                @include tabletMax {grid-area: main;    
+                                   display: flex;
+                                   flex-direction: column;
+                                   justify-content: center;
+                                   align-items: center;
+                }
+        
+
+                .titulo {grid-area: titulo;
+                        .tituloPrincipal{@include bigTabletMin {font-family: "hatton";
+                                                                font-size: 6rem;
+                                                                font-weight: bold;
+                                                                font-style: bold;
+                                                                text-align: left;
+                                                                line-height: 7rem;
+                                        }
+
+                                        @include bigTabletMax {font-family: "hatton";
+                                                               font-size: 5rem;
+                                                               font-weight: bold;
+                                                               font-style: bold;
+                                                               text-align: left;
+                                                               line-height: 6rem;
+                                        }
+
+                                        @include tabletMax {font-family: "hatton";
+                                                            font-size: 6.5rem;
+                                                            font-weight: bold;
+                                                            font-style: bold;
+                                                            text-align: left;
+                                                            line-height: 7rem;
+                                                            margin-top: 11%;
+                                        }
+                        }
+                }
+
+
+                .libro {grid-area: libro;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        padding-top: 13%;
+                        padding-right: 11%;
+                        height: 100%;
+                        width: 100%;
+
+                        .libroHome{height: 100%;
+                                   transition: transform 1.7s;
+                                
+                                   
+                                   &:hover{transform: scale(1.2,1.2);
+                                           }
+
+                                           
+                                   }
+                }
+
+                .detalle {grid-area: detalle;
+                         .lista{list-style-type: none; 
+                                display: flex;
+                                flex-direction: column;
+                                justify-content:end;
+                                align-items:start;
+                                padding-left: 0%;
+                                
+
+                                .etiqueta{color: map-get($colores , "violeta");
+                                          font-family: 'Montserrat';
+                                          font-size: 1.3rem;
+                                          font-weight: bold;
+                                          font-style: normal;
+                                          letter-spacing: 0.05rem;
+                                          text-align: left;
+                                          line-height: 1rem;
+                                          margin-right: 0.4rem;
+                                          margin-top: 25%;
+                                }
+
+                                .textoDetalle{font-family: 'Montserrat';
+                                              font-size: 1.4rem;
+                                              font-weight: normal;
+                                              font-style: normal;
+                                              letter-spacing: 0.05rem;
+                                              text-align: left;
+                                              width: 100%;
+                                              line-height: 2rem;
+                                              margin-bottom: 0%;
+                                }
+                          }
+                } 
+
+        }
+
+
+        /*grilla de libros*/
+
+        .seccionGrilla{display: flex;
+                       flex-flow: row wrap;
+                       justify-content: space-between;
+                       margin-top: 125px;
+    
+    
+                       .subtitulo{
+                                  @include subtitulo;
+                       }
+
+                       .textoGrill{@include mobileMin {width: 39.7%;
+                        }
+
+                                   .texto{
+                                          @include texto;
+                                   } 
+                       } 
+
+                       
+        }
+
+        .grilla{display: flex;
+                flex-flow: row wrap;
+                justify-content: space-evenly;
+                align-items: center;
+                margin-top: 27px;
+
+                .articulo{height: 308px;
+                          width: 206px;
+                          padding: 20px 20px 5px 0px;
+                          transition: transform 0.5s, opacity 0.9s;
+
+                          &:hover{transform: rotate(6deg);
+                                  opacity: 77%;
+                          }
+                }
+        }
+
+}
+
+
+/*grilla de datos*/
+
+.containerDatos{@include tabletMin{display: flex;
+                               flex-direction: column;
+                               justify-content: center;
+                               width: 99%;
+                               margin-top: 17%;
+            }
+    
+            @include tabletMax{height: 1222px;
+                               margin-top: 0%;
+                               display: flex;
+                               width: 99.5%;
+                               flex-direction: column;
+                               justify-content: center;
+            }
+    
+            .grillaFotoMacro{height: 700px;
+                             overflow: hidden;
+                             padding: 0%;
+                
+                            .fotoImagenV{display: flex;
+                                        justify-content: center;
+                                        align-items: center;
+                                        height: 100%;
+                                        width: 100%;
+                             }
+            }
+
+
+      
+
+
+
+
+            .grillaDatosMacro{margin: 0%;
+                
+                                
+
+                              .grillaDatos{display: flex;
+                                           flex-direction: column;
+                                           height: 350px;
+                                           margin: 0%;
+                                           padding: 0%;
+
+                                           .textoGrillaD{border: solid $borde - 0.05 map-get($colores , "negro");
+                                                         padding: 6%;
+                                                         display: flex;
+                                                         flex-flow: column wrap;
+                                                         justify-content:space-between;
+                                                         align-items: start;
+                                                         margin: 0%;
+                                                         height: 100%;
+                                                         width: 100%;
+
+                                                        .tituloDatosIndex{@include tabletMin{font-family: "hatton";
+                                                                                             font-size: 1.5rem;
+                                                                                             font-weight: bold;
+                                                                                             font-style: normal;
+                                                                                             text-align: left;
+                                                                                             margin-bottom: 5%;
+                                                                          }
+                                                                          
+                                                                          @include tabletMax{font-family: "hatton";
+                                                                                             font-size: 2.3rem;
+                                                                                             font-weight: bold;
+                                                                                             font-style: normal;
+                                                                                             text-align: left;
+                                                                                             margin-bottom: 5%;
+                                                                          }
+
+                                                        }
+
+                                                        .textoChicoIndex{@include smallMobileMin{font-family: 'Montserrat';
+                                                                                                 font-size: 1.2rem;
+                                                                                                 font-weight: normal;
+                                                                                                 font-style: normal;
+                                                                                                 letter-spacing: 0.05rem;
+                                                                                                 text-align: left;
+                                                                                                 line-height: 1.3rem;
+                                                                        }
+      
+                                                                        @include smallMobileMax{font-family: 'Montserrat';
+                                                                                                font-size: 1.7rem;
+                                                                                                font-weight: normal;
+                                                                                                font-style: normal;
+                                                                                                letter-spacing: 0.05rem;
+                                                                                                text-align: left;
+                                                                                                line-height: 2.6rem;
+                                                                        }
+
+                                                        }
+
+                                                        
+                                                        .boton {@include smallDeskMin {background-color: map-get($colores , "blanco");
+                                                                                       border: solid $borde map-get($colores , "violeta");
+                                                                                       border-radius: $radio;
+                                                                                       padding-left: 4%;
+                                                                                       padding-right: 2%;
+                                                                                       overflow: hidden;
+                                                                                       display: flex;
+                                                                                       flex-flow: row wrap;
+                                                                                       justify-content:space-between;
+                                                                                       align-items: center;
+                                                                                       width: 60%;
+                                                                                       height: 12%;
+
+                                                                                
+                                                                }
+
+                                                                @include smallDeskMax{background-color: map-get($colores , "blanco");
+                                                                                      border: solid $borde map-get($colores , "violeta");
+                                                                                      border-radius: $radio;
+                                                                                      padding-left: 4%;
+                                                                                      padding-right: 2%;
+                                                                                      overflow: hidden;
+                                                                                      display: flex;
+                                                                                      flex-flow: row wrap;
+                                                                                      justify-content:space-between;
+                                                                                      align-items: center;
+                                                                                      width: 80%;
+                                                                                      height: 12%;
+
+                                                                                      
+                                                                }
+
+                                                                @include tabletMax{background-color: map-get($colores , "blanco");
+                                                                                   border: solid $borde map-get($colores , "violeta");
+                                                                                   border-radius: $radio;
+                                                                                   padding-left: 3%;
+                                                                                   padding-right: 1.5%;
+                                                                                   overflow: hidden;
+                                                                                   display: flex;
+                                                                                   flex-flow: row wrap;
+                                                                                   justify-content:space-between;
+                                                                                   align-items: center;
+                                                                                   width: 33%;
+                                                                                   height: 19%;
+                                                                }
+                                
+
+
+                                                                @include smallMobileMax{border: solid $borde map-get($colores , "violeta");
+                                                                                        border-radius: $radio;
+                                                                                        padding-left: 3%;
+                                                                                        padding-right: 1.5%;
+                                                                                        overflow: hidden;
+                                                                                        display: flex;
+                                                                                        flex-flow: row wrap;
+                                                                                        justify-content:space-between;
+                                                                                        align-items: center;
+                                                                                        width: 88%;
+                                                                                        height: 19%;
+
+                                                                
+
+                                                                }
+
+                                                                @include smallMobileMin{border: solid $borde map-get($colores , "violeta");
+                                                                                        border-radius: $radio;
+                                                                                        padding-left: 3%;
+                                                                                        padding-right: 1.5%;
+                                                                                        overflow: hidden;
+                                                                                        display: flex;
+                                                                                        flex-flow: row wrap;
+                                                                                        justify-content:space-between;
+                                                                                        align-items: center;
+                                                                                        width: 88%;
+                                                                                        height: 19%;
+                                                                                        transition: background-color 1s, height 0.5s, width 0.5s;    
+                                                                }
+
+                                                                
+                                                                &:hover{background-color: map-get($colores , "lila");
+                                                                }
+                                
+                                                                &:active{height: 22%;
+                                                                        width: 99%;
+                                                                }
+
+
+                                                                .textoBotonIndex{@include smallMin{color: map-get($colores , "violeta");
+                                                                                                   font-family: 'Montserrat';
+                                                                                                   font-size: 1rem;
+                                                                                                   font-weight: bold;
+                                                                                                   font-style: normal;
+                                                                                                   letter-spacing: 0.03rem;
+                                                                                                   text-align: left;
+                                                                                                   text-decoration: none;
+                                                                                                   align-items: center;
+                                                                                }
+
+                                                                                @include smallMax {color: map-get($colores , "violeta");
+                                                                                                   font-family: 'Montserrat';
+                                                                                                   font-size: 1.4rem;
+                                                                                                   font-weight: bold;
+                                                                                                   font-style: normal;
+                                                                                                   letter-spacing: 0.03rem;
+                                                                                                   text-align: left;
+                                                                                                   text-decoration: none;
+                                                                                                   align-items: center;
+                                                                                }       
+
+                                                                }
+
+                                                                
+
+                                                                .flechaDescubri{@include smallMin{height: 70%;}
+
+                                                                                @include smallMax{height: 60%;}
+                                                                }
+                                                        }    
+                                            }            
+                              }  
+                              .fotoImagenH{display: flex;
+                                justify-content: center;
+                                align-items: center;
+                                height: 100%;
+                                width: 100%;
+                                
+                               }  
+            }
+}   
+
+
+
+/*footer*/
+
+.footer {
+        @include footer;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

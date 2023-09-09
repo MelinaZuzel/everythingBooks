@@ -1,0 +1,215 @@
+@use 'mq';
+
+
+
+/*fuentes*/
+
+@font-face {font-family: "hatton";
+    src: url('../fonts/PPHatton-Bold.ttf') format("truetype");
+    font-weight: bold; }
+
+@font-face {font-family: "hatton";
+    src: url('../fonts/PPHatton-Medium.ttf') format("truetype");
+    font-weight: normal}
+
+@font-face {font-family: "hatton";
+    src: url('../fonts/PPHatton-Ultralight.ttf') format("truetype");
+    font-weight: lighter; }
+
+
+/*variables*/
+
+$colores:(
+    "negro": black,
+    "violeta": #8400EC, 
+    "lila" : #ebd5fc,
+    "blanco" : white,
+    "gris" : grey,
+    "grisClaro" : #e5e5e5,
+);
+
+$borde: 0.15rem;
+
+$radio: (3rem);
+
+
+
+
+/*barra de navegacion*/
+
+@mixin barraNavegacion {
+    .container-fluid {border-bottom: solid $borde - 0.05 map-get($colores , "negro");
+                      margin-bottom: -0.5%;
+    
+    .navbar-brand{margin-right: 0%;
+                  width: 12%;
+            
+            .logoWeb {@include tabletMin {height: 4%;
+                                          width: 44%;
+                                          transition: transform 0.9s;}
+    
+                      @include tabletMax {height: 100%;
+                                        width: 100%;}
+
+                      &:hover{transform: scale(1.1,1.1);}
+            }
+
+            .flechaAtras {@include tabletMin {height: 28%;
+                                              width: 28%;
+                                              transition: transform 0.9s;
+
+                          }
+
+                          @include tabletMax {height: 55%;
+                                              width: 55%;
+                          }
+
+                          @include smallMax {height: 77%;
+                                              width: 77%;
+                          }
+
+                          &:hover{transform: scale(1.3,1.3);}
+            }
+    }
+    
+    
+    .navbar-collapse{
+              @include mobileMin {display: flex;
+                                   flex-direction: row;
+                                   justify-content: end;
+                                   align-items: end;
+                                   width: 22%;
+                }
+    
+               @include mobileMax {display: flex;
+                                   flex-direction: column;
+                                   justify-content: start;
+                                   align-items: start;
+                }
+                                               
+                        
+                    .nav-item{margin-right: 2rem;
+                    }
+    
+                    .seccion{font-family: 'Montserrat';
+                             color: map-get($colores , "negro");
+                             font-size: 1.5rem;
+                             font-weight: normal;
+                             font-style: normal;
+                             letter-spacing: 0.03rem;
+                             text-decoration: none;
+                             transition: color 0.4s; 
+    
+                             &:hover{color: map-get($colores , "violeta")}
+                            }
+                    
+                    .seccionActual {@extend .seccion;
+                                    font-weight: bold;
+                                }   
+            
+                }                 
+    }
+}
+
+
+/*footer*/
+
+@mixin footer {
+                .subtituloF{color: map-get($colores , "blanco");
+                            font-family: 'Montserrat';
+                            font-size: 1.5rem;
+                            font-weight: bold;
+                            font-style: normal;
+                            letter-spacing: 0.5px;
+                            margin: 0%;  
+                            padding: 0%;
+                }
+    
+                .textoChicoF{list-style-type: none;
+                            text-decoration: none;
+                            color: map-get($colores , "blanco");
+                            font-family: 'Montserrat';
+                            font-size: 1.3rem;
+                            font-weight: lighter;
+                            font-style: normal;
+                            letter-spacing: 0.05rem;
+                            text-align: left;
+                            line-height: 2.2rem;
+                            margin: 0%;  
+                            padding: 0%;
+                }
+}
+
+
+/*estilos generales*/
+
+@mixin subtitulo {font-family: "hatton";
+                  font-size: 2.7rem;
+                  font-weight: bold;
+                  font-style: normal;
+                  text-align: left;}
+
+@mixin texto {font-family: 'Montserrat';
+              font-size: 1.3rem;
+              font-weight: normal;
+              font-style: normal;
+              letter-spacing: 0.05rem;
+              text-align: left;
+              width: 100%;
+              line-height: 2rem;}
+
+@mixin textoBold {color: #8400EC;
+                  font-family: 'Montserrat';
+                  font-size: 1.3rem;
+                  font-weight: bold;
+                  font-style: normal;
+                  letter-spacing: 0.05rem;
+                  text-align: left;
+                  width: 100%;
+                  line-height: 2rem;
+                  
+                }
+
+
+@mixin textoMobile {font-family: 'Montserrat';
+                    font-size: 1rem;
+                    font-weight: normal;
+                    font-style: normal;
+                    letter-spacing: 0.05rem;
+                    text-align: left;
+                    width: 100%;
+                    line-height: 1.3rem;
+                    }
+
+@mixin textoBoldMobile {color: #8400EC;
+                        font-family: 'Montserrat';
+                        font-size: 1rem;
+                        font-weight: bold;
+                        font-style: normal;
+                        letter-spacing: 0.05rem;
+                        text-align: left;
+                        width: 100%;
+                        line-height: 1.3rem;
+                        margin-top: 4%;
+                        }
+
+
+@mixin textoCategoria {font-family: 'Montserrat';
+                       font-size: 1.2rem;
+                       font-weight: normal;
+                       font-style: normal;
+                       letter-spacing: 0.05rem;
+                       text-align: left;
+                       width: 50%;
+                       margin-top: 1%;
+                       line-height: 1.3rem;
+}
+
+
+@mixin libroSmall {width: 135px;
+                   height: 200px;
+}
+
+
+
+

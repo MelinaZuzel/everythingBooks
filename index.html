@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Elegir un libro nunca fue tan fácil. Te contamos toda la información que necesitas para que puedas decidir cuál va a ser tu próxima lectura. Desde reseñas y favoritos, hasta información sobre el autor de la obra.">
+    <meta name="keywords" content="libros, resumenes, recomendaciones, opiniones, reseñas, bibliografía, autores">
+    <title>home - todo sobre libros</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/styles.css">    
+</head>
+
+<body>
+  <!--barra de navegacion-->
+  <header class="sticky-top">
+    <nav class="navbar navbar-light bg-light navbar-expand-sm">
+        <div class="container-fluid">
+
+            <a class="navbar-brand" href="./index.html">
+                <img class="logoWeb" src="./img/logo.svg" alt="logo de dos libros entrelazados">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu" aria-controls="menu" aria-expanded="menu">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="menu">
+              <ul class="navbar-nav">
+                <!--home-->
+                <li>
+                  <a class="nav-item nav-link seccionActual" href="./index.html" >HOME</a>
+                </li>
+                <!--reseñas-->
+                <li>
+                  <a class="nav-item nav-link seccion" href="./pages/resenas.html">RESEÑAS</a>
+                </li>
+                <!--top 10-->
+                <li>
+                  <a class="nav-item nav-link seccion" href="./pages/top.html">TOP10</a>
+                </li>
+              </ul>
+            </div>
+
+        </div>
+    </nav>
+  </header>
+
+  <main class="margenes">
+
+      <!--inicio de pagina-->
+      <section class="inicio">
+
+          <div class="titulo">
+            <h1 class="tituloPrincipal">Todo sobre los libros</h1>
+          </div>
+
+          <div class="libro">
+            <img class="libroHome" src="./img/libro_principito.jpg" alt="Libro El principito, la portada es azul e ilustrado con un niño sobre una luna">
+          </div>
+
+          <div class="detalle">
+            <ul class="lista">
+              <li>
+                <p class="etiqueta">LIBRO DE HOY:</p>
+              </li>
+              <li>
+                <p class="textoDetalle">El Principito</p>
+              </li>
+              <li>
+                <p class="etiqueta">AUTOR/A:</p>
+              </li>
+              <li>
+                <p class="textoDetalle">A.Saint-Exupéry</p>
+              </li>
+              <li>
+                <p class="etiqueta">PUNTAJE:</p>
+              </li>
+              <li>
+                <p class="textoDetalle">9/10 puntos</p>
+              </li>
+            </ul>
+          </div>
+
+      </section>
+
+
+      <!--grilla de libros-->
+      <section>    
+        <div class="seccionGrilla">
+          <h2 class="subtitulo">Nuestra selección</h2>
+          <div class="textoGrill">
+             <p class="texto">Publicamos sobre ficción nacional y extranjera, no ficción, novelas, biografías, cómics y más libros</p>
+          </div>
+        </div>
+
+        <article class="grilla">
+            <div>
+               <a href="./pages/libro.html"><img class="articulo" src="./img/libro_cumbres.jpg" alt="libro Cumbres Borrascosas de Emily Brontë, la portada es gris con ramas ilustradas llenas de hojas y frutos rosados"></a>
+            </div>
+            <div>
+                <a href="./pages/libro.html"><img class="articulo" src="./img/libro_principito.jpg" alt="libro El principito de Saint Exupery, el libro es azul e ilustrado con un niño sobre una luna"></a>
+             </div>
+             <div>
+                <a href="./pages/libro.html"><img class="articulo" src="./img/libro_amorcolera.jpg" alt="libro El amor en tiempos de colera de Garcia Marquez, el libro es rojo con un pequeño cuadro de un barco navegando ubicado en el centro"></a>
+             </div>
+             <div>
+                <a href="./pages/libro.html"><img class="articulo" src="./img/libro_alicia.jpg" alt="libro Aliaci en el pais de las maravillas de Lewis Carroll, la portada es azul ilustrada con un marco rosas y la silueta de un conejo y una niña"></a>
+             </div>
+             <div>
+                <a href="./pages/libro.html"><img class="articulo" src="./img/libro_codigo.jpg" alt="libro Código Davinci de Dan Brown, la tapa tiene en el centro los ojos del famoso cuadro de una mujer llamado La Gioconda"></a>
+             </div>
+             <div>
+                <a href="./pages/libro.html"><img class="articulo" src="./img/libro_harry7.jpg" alt="libro Harry Potter, la portada es violeta con estrellas doradas"></a>
+             </div>
+             <div>
+                <a href="./pages/libro.html"><img class="articulo" src="./img/libro_janeeyre.jpg" alt="Libro Jane Eyre de Charlotte Brontë, su tapa es verde y en el centro tiene la ilustracion una mujer con capelina y vestido"></a>
+             </div>
+             <div>
+                <a href="./pages/libro.html"><img class="articulo" src="./img/libro_lailiada.png" alt="libro La Iliada, su tapa es una lustracion de dos gladiadores luchando"></a>
+             </div>
+             <div>
+                <a href="./pages/libro.html"><img class="articulo" src="./img/libro_sombradelviento.jpg" alt="libro La sombra del viento de Carlos Zafon, tiene en su portada una esquina nostalgica con neblina en la que se puede ver un hombre y un niño caminando de la mano"></a>
+             </div>
+             <div>
+                <a href="./pages/libro.html"><img class="articulo" src="./img//libro_orgulloyprejuicio.jpeg" alt="libro Orgullo y Prejuicio de Jane Austen, la portada celeste con ilustraciones de pajaros y la puerta a un parque"></a>
+             </div>
+             <div>
+                <a href="./pages/libro.html"><img class="articulo" src="./img/libro_elaleph.jpg" alt="libro El aleph de Borges, la portada es verde agua con una ilustración de pluma de escribir antigua"></a>
+             </div>
+             <div>
+                <a href="./pages/libro.html"><img class="articulo" src="./img/mobyDick.jpg" alt="libro Moby Dick, es una portada fotografica de un tiburos que se acerca amenazante con la boca abierta a un barco"></a>
+             </div>
+             <div>
+                <a href="./pages/libro.html"><img class="articulo" src="./img/libro_lacasadelosespiritus.jpg" alt="libro La casa de los espiritus de isabel allende, la portada contiene la mitad del rostro de una mujer con pelo verde simulando un arbol de naranjas"></a>
+             </div>
+             <div>
+                <a href="./pages/libro.html"><img class="articulo" src="./img/libro_got.jpg" alt="libro Game of thrones de George R.R Martin, la portada es naranja y texturada con un escudo circular y rojo en el centro que tiene un dragón gris de dos cabezas"></a>
+             </div>
+             
+        </article>
+    </section>
+       
+  </main>
+
+  <!--grilla de datos-->
+  <seccion class="containerDatos text-center">
+        <div class="row">
+
+            <div class="grillaFotoMacro d-none d-md-block col-md-3">
+                <img class="fotoImagenV" src="./img/librosBiblioteca.jpg" alt="biblioteca de libros con colores y alturas variadas"> 
+            </div>
+
+            <div class="grillaDatosMacro col-xs-12 col-md-9">
+              
+                <div class="row">
+                    <div class="grillaDatos col-xs-1 col-md-4">
+                        <div class="textoGrillaD">
+                            <div>
+                                <h3 class="tituloDatosIndex">AUTOR DEL DIA</h3>
+                                <p class="textoChicoIndex">Conocé sobre la vida de Herman Melville</p>
+                            </div>
+                            <div class="boton">
+                                <a class="textoBotonIndex" href="">DESCUBRÍ</a>
+                                <img class="flechaDescubri" src="./img/flechaBoton.svg" alt="icono flecha">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="grillaDatos d-none d-md-block col-md-8">
+                        <img class="fotoImagenH" src="./img/librosAbiertos.jpg" alt="monton de libros abiertos apilados">
+                    </div>
+
+                </div>
+                
+                <div class="row">
+                    <div class="grillaDatos d-none d-md-block col-md-4"></div>
+                                
+                    <div class="grillaDatos col-xs-1 col-md-4">
+                        <div class="textoGrillaD">
+                            <div>
+                                <h3 class="tituloDatosIndex">SOBRE NOSOTROS</h3>
+                                <p class="textoChicoIndex">Te contamos sobre las metas que tenemos</p>
+                            </div>
+                                
+                            <div class="boton">
+                                <a class="textoBotonIndex" href="">DESCUBRÍ</a>
+                                <img class="flechaDescubri" src="./img/flechaBoton.svg" alt="icono flecha">
+                            </div>
+                        </div>
+                    </div>
+                                
+
+                    <div class="grillaDatos col-xs-1 col-md-4">
+                        <div class="textoGrillaD">
+                            <div>
+                                <h3 class="tituloDatosIndex">COLECCIÓN</h3>
+                                <p class="textoChicoIndex">Te contamos sobre las metas que tiene este sitio</p>
+                            </div>
+                            <div class="boton">
+                                <a class="textoBotonIndex" href="">DESCUBRÍ</a>
+                                <img class="flechaDescubri" src="./img/flechaBoton.svg" alt="icono flecha">
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+                      
+                  
+        </div>
+  </seccion>
+    
+
+
+  <!--footer-->
+  <footer class="footer bg-dark text-center text-lg-start text-white">
+      <div class="container p-4">
+
+          <div class="row mt-4">
+
+              <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+                  <h4 class="subtituloF">CONTACTÁNOS</h4>
+                  <ul class="list-unstyled mb-0">
+                    <li>
+                      <a href="#!" class="textoChicoF"><i class="fas fa-book fa-fw fa-sm me-2"></i>Teléfono: 1134445566</a>
+                    </li>
+                    <li>
+                      <a href="#!" class="textoChicoF"><i class="fas fa-book fa-fw fa-sm me-2"></i>Email: email@gmail.com</a>
+                    </li>
+                  </ul>
+              </div>
+          
+              <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+                  <h4 class="subtituloF">REDES</h4>
+                  <ul class="list-unstyled">
+                    <li>
+                      <a href="#!" class="textoChicoF"><i class="fas fa-shipping-fast fa-fw fa-sm me-2"></i>Instagram: @instagram</a>
+                    </li>
+                    <li>
+                      <a href="#!" class="textoChicoF"><i class="far fa-file-alt fa-fw fa-sm me-2"></i>Twitter: twitter.com</a>
+                    </li>
+                  </ul>
+              </div>
+       
+              <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+                  <h4 class="subtituloF">NEWSLETTER</h4>
+                  <ul class="list-unstyled">
+                    <li>
+                      <a href="#!" class="textoChicoF">Contactate acá para ser parte y enterarte de las novedades.</a>
+                    </li>
+                  </ul>
+              </div>
+         
+              <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+                  <h4 class="subtituloF">MÁS DE NOSOTROS</h4>
+                  <ul class="list-unstyled">
+                    <li>
+                      <a href="#!" class="textoChicoF"><i class="fas fa-at fa-fw fa-sm me-2"></i>Ética laboral</a>
+                    </li>
+                    <li>
+                      <a href="#!" class="textoChicoF"><i class="fas fa-shipping-fast fa-fw fa-sm me-2"></i>Fuentes e ideas</a>
+                    </li>
+                  </ul>
+              </div>
+          
+          </div>
+
+      </div>
+  </footer>
+  
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script> 
+
+</body>
+</html>
+
+
+

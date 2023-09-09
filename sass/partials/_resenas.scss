@@ -1,0 +1,515 @@
+@use 'variables';
+    
+.html{font-size: 62.5%;}
+
+
+/*barra de navegacion*/
+
+.navbar{
+        @include barraNavegacion;
+}
+
+.margenes{margin-left: 30px;
+          margin-right: 30px;
+          overflow: hidden;
+     
+
+          /*titulo reseñas*/
+
+          .portadaReseñas{display: flex;
+                          flex-direction: column;
+                          justify-content: center;
+                          align-items: center;
+                          border-bottom: solid $borde - 0.05 map-get($colores , "negro");
+                          height: 333px;
+                         
+                          
+
+                        .libroReseñaChico{@include libroSmall;
+                                          
+                                          
+                        }
+
+                        .libroReseñaChico1{@include libroSmall;
+                                          animation-name: aparecer;
+                                          animation-duration: 1s;
+                                          animation-iteration-count: 1;
+                                          animation-delay: 1s;
+                                          
+                        }
+
+                        /*keyframes*/
+
+                        @keyframes aparecer {0%{opacity: 100%;}
+                                             100%{opacity: 0%;}
+                                
+                        }
+
+                        .libroReseñaChico2{@include libroSmall;
+                                          animation-name: aparecer;
+                                          animation-duration: 1s;
+                                          animation-iteration-count: 1;
+                                          animation-delay: 1.5s;
+                                          
+                        }
+
+                        /*keyframes*/
+
+                        @keyframes aparecer {0%{opacity: 100%;}
+                                             100%{opacity: 0%;}
+                                
+                        }
+                        
+                        .libroReseñaChico3{@include libroSmall;
+                                          animation-name: aparecer;
+                                          animation-duration: 1s;
+                                          animation-iteration-count: 1;
+                                          animation-delay: 2s;
+                                          
+                        }
+
+                        /*keyframes*/
+
+                        @keyframes aparecer {0%{opacity: 100%;}
+                                             100%{opacity: 0%;}
+                                
+                        }
+
+                        .libroReseñaChico4{@include libroSmall;
+                                          animation-name: aparecer;
+                                          animation-duration: 1s;
+                                          animation-iteration-count: 1;
+                                          animation-delay: 2.5s;
+                                          
+                        }
+
+                        /*keyframes*/
+
+                        @keyframes aparecer {0%{opacity: 100%;}
+                                             100%{opacity: 0%;}
+                                
+                        }      
+
+                              
+
+                        .tituloPrincipalReseñas{@include mobileMin {font-family: "hatton";
+                                                                    font-size: 5.7rem;
+                                                                    font-weight: bold;
+                                                                    font-style: bold;
+                                                                    text-align: left;
+                                                                    margin-bottom: 0%;
+                                                }
+
+                                                @include mobileMax {font-family: "hatton";
+                                                                    font-size: 3rem;
+                                                                    font-weight: bold;
+                                                                    font-style: bold;
+                                                                    text-align: left;
+                                                                    margin-bottom: 0%;
+                                                }
+                        }
+          
+                                 
+         }
+
+         .linea {@include smallDeskMin {border-right: solid $borde - 0.05 map-get($colores , "negro");
+                                        border-left: solid $borde - 0.05 map-get($colores , "negro");
+                 }
+
+                 @include smallDeskMax {border-left: solid $borde - 0.05 map-get($colores , "negro");
+                 }
+         }
+
+
+         /*detalle libro*/
+
+         .margenesReseña {margin-top: 7%;
+                          margin-bottom: 7%;
+                          
+                                  
+                    .card-img{@include mobileMin{width: 100%;
+                                                 background:none;
+                              }
+
+                              @include mobileMax{width: 100%;
+                                                 background:none;
+                                                 height: 500px;
+                                                 width: 333px;
+                              }
+
+                              @include smallMax{width: 100%;
+                                                 background:none;
+                                                 height: 311px;
+                                                 width: 211px;
+                              }
+                    
+                    }
+
+                    .card-img-overlay{@include mobileMin {
+                                      background-color: map-get($colores , "negro");
+                                      height: 40%;
+                                      width: 55%;
+                                      padding:5%;
+                                      display: flex;
+                                      flex-flow: column;
+                                      justify-content:space-between;
+                                      align-items: start;
+                                      align-self: end;
+                                      margin-top: 83%;
+                                      margin-left: 45%;
+                                      transition: transform 2s;
+
+                                      &:hover {transform: scale(1.1,1.1);}                                      
+                                      } 
+
+                                      @include mobileMax {
+                                      background-color: map-get($colores , "negro");
+                                      height: 35%;
+                                      width: 79%;
+                                      padding:5%;
+                                      display: flex;
+                                      flex-flow: column;
+                                      justify-content:space-between;
+                                      align-items: start;
+                                      align-self: end;
+                                      margin-top: 328px;
+                                      margin-left: 80%;
+  
+                                      } 
+
+                                      @include smallMax {
+                                      background-color: map-get($colores , "negro");
+                                      height: 55%;
+                                      width: 100%;
+                                      padding:5%;
+                                      display: flex;
+                                      flex-flow: column;
+                                      justify-content:space-between;
+                                      align-items: start;
+                                      align-self: end;
+                                      margin-top: 142px;
+                                      margin-left: 64%;
+  
+                                      } 
+                                
+
+                                      .datosReseña{display: flex;
+                                                   flex-direction: column;
+                                                   padding-top: 0.5%;
+                                                   padding-left: 2%;
+                                                                                    
+                                                   .card-title{@include deskMin {color: map-get($colores , "blanco");
+                                                                                font-family: 'Montserrat';
+                                                                                font-size: 1.1rem;
+                                                                                font-weight: normal;
+                                                                                font-style: normal;
+                                                                                letter-spacing: 0.05rem;
+                                                                                text-align: left;
+                                                                                width: 100%;
+                                                                                line-height: 1.4rem;
+                                                                                margin-bottom: 9%;
+                                                               }
+
+                                                               @include deskMax {color: map-get($colores , "blanco");
+                                                                                font-family: 'Montserrat';
+                                                                                font-size: 1rem;
+                                                                                font-weight: normal;
+                                                                                font-style: normal;
+                                                                                letter-spacing: 0.05rem;
+                                                                                text-align: left;
+                                                                                width: 100%;
+                                                                                line-height: 1rem;
+                                                                                margin-bottom: 8%;
+                                                               }
+
+                                                               @include tabletMax {color: map-get($colores , "blanco");
+                                                                                   font-family: 'Montserrat';
+                                                                                   font-size: 0.7rem;
+                                                                                   font-weight: normal;
+                                                                                   font-style: normal;
+                                                                                   letter-spacing: 0.05rem;
+                                                                                   text-align: left;
+                                                                                   width: 100%;
+                                                                                   line-height: 1rem;
+                                                                                   margin-bottom: 3%;
+                                                               }
+
+                                                   }
+
+                     
+                                                   .card-text{@include deskMin {color: map-get($colores , "blanco");
+                                                                                font-family: 'Montserrat';
+                                                                                font-size: 2rem;
+                                                                                font-weight: bold;
+                                                                                font-style: normal;
+                                                                                letter-spacing: 0.05rem;
+                                                                                text-align: left;
+                                                                                line-height: 1rem;
+                                                                                margin-bottom: 33%;
+                                                                                padding-top: 0.3rem;
+                                                              }
+
+                                                              @include deskMax {color: map-get($colores , "blanco");
+                                                                                font-family: 'Montserrat';
+                                                                                font-size: 1.8rem;
+                                                                                font-weight: bold;
+                                                                                font-style: normal;
+                                                                                letter-spacing: 0.05rem;
+                                                                                text-align: left;
+                                                                                line-height: 1rem;
+                                                                                margin-bottom: 22%;
+                                                                                padding-top: 0.3rem;
+                                                              }
+
+                                                              @include tabletMax {color: map-get($colores , "blanco");
+                                                                                  font-family: 'Montserrat';
+                                                                                  font-size: 1.3rem;
+                                                                                  font-weight: bold;
+                                                                                  font-style: normal;
+                                                                                  letter-spacing: 0.05rem;
+                                                                                  text-align: left;
+                                                                                  line-height: 1rem;
+                                                                                  margin-bottom: 15%;
+                                                                                  padding-top: 0.3rem;
+                                                              }
+                                                              
+                                                   }
+                                      }
+                    }
+          
+
+                    .reseñaDisplay{@include smallDeskMin {display: flex;  
+                                                          flex-direction: column;  
+                                                          justify-content: space-between;  
+                                                          height: 100%;  
+                                                          padding-left: 0%;  
+                                                          padding-right: 0%; 
+                                
+                                  }
+
+                                  @include smallDeskMax {display: flex;  
+                                                         flex-direction: column;  
+                                                         justify-content: space-between;  
+                                                         height: 100%;  
+                                                         padding-left: 0%;  
+                                                         padding-right: 0%; 
+                                                         margin-top: 5%;
+                                  }
+
+                                  
+                        
+                                  .tituloReseña{@include mobileMin{font-family: "hatton"; 
+                                                                   font-size: 5rem; 
+                                                                   font-weight: bold; 
+                                                                   font-style: normal; 
+                                                                   text-align: left; 
+                                                                   line-height: 5.5rem; 
+                                                                   width: 100%; 
+                                                }
+
+                                                @include mobileMax{font-family: "hatton"; 
+                                                                font-size: 4rem; 
+                                                                font-weight: bold; 
+                                                                font-style: normal; 
+                                                                text-align: left; 
+                                                                line-height: 4.3rem; 
+                                                                width: 100%; 
+                                                }
+
+                                               @include smallMax{font-family: "hatton"; 
+                                                                font-size: 2.8rem; 
+                                                                font-weight: bold; 
+                                                                font-style: normal; 
+                                                                text-align: left; 
+                                                                line-height: 3.5rem; 
+                                                                width: 100%; 
+                                                }
+
+                                                
+
+                                  }
+
+                                  .textoReseña{display: flex; 
+                                              flex-direction: column; 
+                                              justify-content: start; 
+                                              width: 95%;  
+
+
+                                              .textoBold{@include tabletMin {@include textoBold;
+                                                                             font-size: 1.3rem;
+                                                                             line-height: 1.8rem;
+                                                         }
+
+                                                         @include tabletMax {@include textoBold;
+                                                                             font-size: 0.9rem;
+                                                                             line-height: 1.4rem;
+                                                         }
+                                              }
+
+                                              .texto{@include tabletMin {@include texto;
+                                                                        font-size: 1.3rem;
+                                                                        line-height: 1.8rem;
+                                                    }
+
+                                                    @include tabletMax {@include texto;
+                                                                        font-size: 0.9rem;
+                                                                        line-height: 1.4rem;
+                                                    }
+                                              }          
+
+                                  }
+                    }             
+         }
+         
+
+
+         /*formulario*/
+
+         .grillaFormulario{@include smallDeskMin {display: grid;
+                                                  grid-template-columns: 1fr 1fr;     
+                                                  grid-template-rows: 1fr 1fr 1fr;   
+                                                  grid-template-areas:
+                                                  "imagenForm tituloFormulario"
+                                                  "imagenForm formulario";
+                                                  height: 887px;
+                                                  width: 100%;
+                                                  margin-bottom: 11%;
+                                                  overflow: hidden;
+                           }
+
+                           @include smallDeskMax {display: grid;
+                                                  grid-template-columns: 1fr 1fr;     
+                                                  grid-template-rows: 1fr 1fr 1fr;   
+                                                  grid-template-areas:
+                                                  "tituloFormulario"
+                                                  "formulario";
+                                                  height: 777px;
+                                                  width: 100%;
+                                                  margin-bottom: 11%;
+                                                  overflow: hidden;
+                           }
+
+                            .tituloFormulario{
+                                              grid-area: tituloFormulario;
+                                              font-family: "hatton";
+                                              font-size: 3.5rem;
+                                              font-weight: normal;
+                                              font-style: normal;
+                                              text-align: left;
+                                              margin-left: 7%;
+                                              width: 100%;
+                                              
+                                              
+                            }
+
+                            .imagenFormulario{grid-area: imagenForm;
+                                              width: 90%;
+                                              height: 100%;
+                                              padding-left: 14%;
+                                              overflow: hidden;
+                                              
+                            }
+
+                             .formulario {grid-area: formulario;
+                                          margin-left: 7%; 
+                                          display: flex;
+                                          flex-direction: column;
+                                          justify-content: end;
+                                          align-content: end;
+                                          
+                    
+                                          .form-label{@include mobileMin {color: map-get($colores , "gris");
+                                                                          font-family: 'Montserrat';
+                                                                          font-size: 1.5rem;
+                                                                          font-weight: normal;
+                                                                          font-style: normal;
+                                                                          letter-spacing: 0.05rem;
+                                                                          text-align: left;
+                                                                          line-height: 1.6rem;
+                                                                          margin-top: 3%;
+                                                     }         
+                                                     
+                                                     @include mobileMax {color: map-get($colores , "gris");
+                                                                          font-family: 'Montserrat';
+                                                                          font-size: 1.2rem;
+                                                                          font-weight: normal;
+                                                                          font-style: normal;
+                                                                          letter-spacing: 0.05rem;
+                                                                          text-align: left;
+                                                                          line-height: 1.6rem;
+                                                                          margin-top: 3%;
+                                                     }         
+                                           }
+
+                                            .form-text{color: map-get($colores , "negro");
+                                                       font-family: 'Montserrat';
+                                                       font-size: 1.3rem;
+                                                       font-weight: normal;
+                                                       font-style: normal;
+                                                       letter-spacing: 0.05rem;
+                                                       text-align: left;
+                                                       line-height: 1.4rem;
+
+                                            }
+
+                                            .botonForm {border: solid $borde map-get($colores , "violeta");
+                                                        border-radius: $radio;
+                                                        padding-left: 3%;
+                                                        padding-right: 1%;
+                                                        overflow: hidden;
+                                                        display: flex;
+                                                        flex-flow: row wrap;
+                                                        justify-content:space-between;
+                                                        align-items: center;
+                                                        width:67%;
+                                                        height: 10%;
+                                                        margin-top: 3%;
+                                                        margin-bottom: 4%;
+                                                        transition: background-color 1s;
+
+                                                        
+                                                        
+                                            &:hover{background-color: map-get($colores , "lila");
+                                            }  
+                                                        
+
+                                                        .textoBoton{@include mobileMin{color: map-get($colores , "violeta");
+                                                                                        font-family: 'Montserrat';
+                                                                                        font-size: 1.5rem;
+                                                                                        font-weight: bold;
+                                                                                        font-style: normal;
+                                                                                        letter-spacing: 0.03rem;
+                                                                                        text-align: left;
+                                                                                        text-decoration: none;
+                                                                                        align-items: center;
+                                                                                        }
+               
+                                                                    @include mobileMax{color: map-get($colores , "violeta");
+                                                                                       font-family: 'Montserrat';
+                                                                                       font-size: 1.1rem;
+                                                                                       font-weight: bold;
+                                                                                       font-style: normal;
+                                                                                       letter-spacing: 0.03rem;
+                                                                                       text-align: left;
+                                                                                       text-decoration: none;
+                                                                                       align-items: center;
+                                                                                       }
+           
+                                                        }
+                        
+
+                                                                    .flechaDescubri{@include smallMin{height: 88%;}
+                                                                                    @include smallMax{height: 60%;}
+                                            }                        }
+                            }
+                    
+         }       
+
+}        
+
+
+/*footer*/
+
+.footer {
+        @include footer;
+}

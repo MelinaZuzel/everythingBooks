@@ -1,0 +1,2428 @@
+@charset "UTF-8";
+/*MEDIA QUERIES*/
+/*tamaños desk*/
+/*tamaños tablet*/
+/*tamaños mobile*/
+/*MEDIA QUERIES*/
+/*tamaños desk*/
+/*tamaños tablet*/
+/*tamaños mobile*/
+/*fuentes*/
+@font-face {
+  font-family: "hatton";
+  src: url("../fonts/PPHatton-Bold.ttf") format("truetype");
+  font-weight: bold;
+}
+@font-face {
+  font-family: "hatton";
+  src: url("../fonts/PPHatton-Medium.ttf") format("truetype");
+  font-weight: normal;
+}
+@font-face {
+  font-family: "hatton";
+  src: url("../fonts/PPHatton-Ultralight.ttf") format("truetype");
+  font-weight: lighter;
+}
+/*variables*/
+/*barra de navegacion*/
+/*footer*/
+/*estilos generales*/
+/*MEDIA QUERIES*/
+/*tamaños desk*/
+/*tamaños tablet*/
+/*tamaños mobile*/
+/*fuentes*/
+@font-face {
+  font-family: "hatton";
+  src: url("../fonts/PPHatton-Bold.ttf") format("truetype");
+  font-weight: bold;
+}
+@font-face {
+  font-family: "hatton";
+  src: url("../fonts/PPHatton-Medium.ttf") format("truetype");
+  font-weight: normal;
+}
+@font-face {
+  font-family: "hatton";
+  src: url("../fonts/PPHatton-Ultralight.ttf") format("truetype");
+  font-weight: lighter;
+}
+/*variables*/
+/*barra de navegacion*/
+/*footer*/
+/*estilos generales*/
+.html {
+  font-size: 62.5%;
+}
+
+/*barra de navegacion*/
+.navbar .container-fluid {
+  border-bottom: solid 0.1rem black;
+  margin-bottom: -0.5%;
+}
+.navbar .container-fluid .navbar-brand {
+  margin-right: 0%;
+  width: 12%;
+}
+@media screen and (min-width: 767px) {
+  .navbar .container-fluid .navbar-brand .logoWeb {
+    height: 4%;
+    width: 44%;
+    transition: transform 0.9s;
+  }
+}
+@media screen and (max-width: 767px) {
+  .navbar .container-fluid .navbar-brand .logoWeb {
+    height: 100%;
+    width: 100%;
+  }
+}
+.navbar .container-fluid .navbar-brand .logoWeb:hover {
+  transform: scale(1.1, 1.1);
+}
+@media screen and (min-width: 767px) {
+  .navbar .container-fluid .navbar-brand .flechaAtras {
+    height: 28%;
+    width: 28%;
+    transition: transform 0.9s;
+  }
+}
+@media screen and (max-width: 767px) {
+  .navbar .container-fluid .navbar-brand .flechaAtras {
+    height: 55%;
+    width: 55%;
+  }
+}
+@media screen and (max-width: 400px) {
+  .navbar .container-fluid .navbar-brand .flechaAtras {
+    height: 77%;
+    width: 77%;
+  }
+}
+.navbar .container-fluid .navbar-brand .flechaAtras:hover {
+  transform: scale(1.3, 1.3);
+}
+@media screen and (min-width: 576px) {
+  .navbar .container-fluid .navbar-collapse {
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+    align-items: end;
+    width: 22%;
+  }
+}
+@media screen and (max-width: 576px) {
+  .navbar .container-fluid .navbar-collapse {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+  }
+}
+.navbar .container-fluid .navbar-collapse .nav-item {
+  margin-right: 2rem;
+}
+.navbar .container-fluid .navbar-collapse .seccion, .navbar .container-fluid .navbar-collapse .seccionActual {
+  font-family: "Montserrat";
+  color: black;
+  font-size: 1.5rem;
+  font-weight: normal;
+  font-style: normal;
+  letter-spacing: 0.03rem;
+  text-decoration: none;
+  transition: color 0.4s;
+}
+.navbar .container-fluid .navbar-collapse .seccion:hover, .navbar .container-fluid .navbar-collapse .seccionActual:hover {
+  color: #8400EC;
+}
+.navbar .container-fluid .navbar-collapse .seccionActual {
+  font-weight: bold;
+}
+
+.col {
+  margin-top: 6%;
+  margin-bottom: 6%;
+  /*titulo*/
+  /*TOP10*/
+}
+@media screen and (min-width: 767px) {
+  .col .tituloPrincipalTop {
+    grid-area: tituloTop;
+    font-family: "hatton";
+    font-size: 9rem;
+    font-weight: bold;
+    font-style: normal;
+    text-align: left;
+    line-height: 10.5rem;
+    width: 77%;
+  }
+}
+@media screen and (max-width: 767px) {
+  .col .tituloPrincipalTop {
+    grid-area: tituloTop;
+    font-family: "hatton";
+    font-size: 6rem;
+    font-weight: bold;
+    font-style: normal;
+    text-align: left;
+    line-height: 7.5rem;
+    width: 77%;
+  }
+}
+@media screen and (min-width: 400px) {
+  .col .card-img-overlay {
+    background-color: black;
+    height: 40%;
+    width: 55%;
+    padding: 5%;
+    display: flex;
+    flex-flow: column;
+    justify-content: space-between;
+    align-items: start;
+    align-self: end;
+    margin-top: 83%;
+    margin-left: 45%;
+    transition: transform 2s;
+  }
+  .col .card-img-overlay:hover {
+    transform: scale(1.1, 1.1);
+  }
+}
+@media screen and (max-width: 400px) {
+  .col .card-img-overlay {
+    background-color: black;
+    height: 45%;
+    width: 55%;
+    padding: 5%;
+    display: flex;
+    flex-flow: column;
+    justify-content: space-between;
+    align-items: start;
+    align-self: end;
+    margin-top: 76%;
+    margin-left: 45%;
+  }
+}
+@media screen and (min-width: 576px) {
+  .col .card-img-overlay .subtituloTop {
+    font-family: "hatton";
+    font-size: 1.8rem;
+    font-weight: bold;
+    font-style: normal;
+    text-align: left;
+    margin-bottom: 5%;
+  }
+}
+@media screen and (max-width: 576px) {
+  .col .card-img-overlay .subtituloTop {
+    font-family: "hatton";
+    font-size: 1.1rem;
+    font-weight: bold;
+    font-style: normal;
+    text-align: left;
+    margin-bottom: 5%;
+    line-height: 1.7rem;
+  }
+}
+@media screen and (min-width: 576px) {
+  .col .card-img-overlay .textoChico {
+    font-family: "Montserrat";
+    font-size: 1.3rem;
+    font-weight: normal;
+    font-style: normal;
+    letter-spacing: 0.05rem;
+    text-align: left;
+    line-height: 2.3rem;
+  }
+}
+@media screen and (max-width: 576px) {
+  .col .card-img-overlay .textoChico {
+    font-family: "Montserrat";
+    font-size: 0.9rem;
+    font-weight: normal;
+    font-style: normal;
+    letter-spacing: 0.05rem;
+    text-align: left;
+    line-height: 1.2rem;
+  }
+}
+@media screen and (min-width: 576px) {
+  .col .card-img-overlay .botonTop {
+    background-color: white;
+    border-radius: 3rem;
+    padding-left: 6%;
+    padding-right: 3%;
+    overflow: hidden;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    align-items: center;
+    width: 80%;
+    height: 16%;
+    transition: background-color 1s, height 0.5s, width 0.5s;
+  }
+}
+@media screen and (max-width: 576px) {
+  .col .card-img-overlay .botonTop {
+    background-color: white;
+    border-radius: 3rem;
+    padding-left: 6%;
+    padding-right: 3%;
+    overflow: hidden;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    align-items: center;
+    width: 72%;
+    height: 16%;
+  }
+}
+.col .card-img-overlay .botonTop:hover {
+  background-color: #ebd5fc;
+}
+.col .card-img-overlay .botonTop:active {
+  height: 18%;
+  width: 88%;
+}
+@media screen and (min-width: 576px) {
+  .col .card-img-overlay .botonTop .textoBoton {
+    color: #8400EC;
+    font-family: "Montserrat";
+    font-size: 1.1rem;
+    font-weight: bold;
+    font-style: normal;
+    letter-spacing: 0.03rem;
+    text-align: left;
+    text-decoration: none;
+    align-items: center;
+  }
+}
+@media screen and (max-width: 576px) {
+  .col .card-img-overlay .botonTop .textoBoton {
+    color: #8400EC;
+    font-family: "Montserrat";
+    font-size: 0.9rem;
+    font-weight: bold;
+    font-style: normal;
+    letter-spacing: 0.03rem;
+    text-align: left;
+    text-decoration: none;
+    align-items: center;
+  }
+}
+.col .card-img-overlay .botonTop .flechaChica {
+  width: 20%;
+}
+
+/*footer*/
+.footer .subtituloF {
+  color: white;
+  font-family: "Montserrat";
+  font-size: 1.5rem;
+  font-weight: bold;
+  font-style: normal;
+  letter-spacing: 0.5px;
+  margin: 0%;
+  padding: 0%;
+}
+.footer .textoChicoF {
+  list-style-type: none;
+  text-decoration: none;
+  color: white;
+  font-family: "Montserrat";
+  font-size: 1.3rem;
+  font-weight: lighter;
+  font-style: normal;
+  letter-spacing: 0.05rem;
+  text-align: left;
+  line-height: 2.2rem;
+  margin: 0%;
+  padding: 0%;
+}
+
+/*MEDIA QUERIES*/
+/*tamaños desk*/
+/*tamaños tablet*/
+/*tamaños mobile*/
+/*fuentes*/
+@font-face {
+  font-family: "hatton";
+  src: url("../fonts/PPHatton-Bold.ttf") format("truetype");
+  font-weight: bold;
+}
+@font-face {
+  font-family: "hatton";
+  src: url("../fonts/PPHatton-Medium.ttf") format("truetype");
+  font-weight: normal;
+}
+@font-face {
+  font-family: "hatton";
+  src: url("../fonts/PPHatton-Ultralight.ttf") format("truetype");
+  font-weight: lighter;
+}
+/*variables*/
+/*barra de navegacion*/
+/*footer*/
+/*estilos generales*/
+.html {
+  font-size: 62.5%;
+}
+
+/*barra de navegacion*/
+.navbar .container-fluid {
+  border-bottom: solid 0.1rem black;
+  margin-bottom: -0.5%;
+}
+.navbar .container-fluid .navbar-brand {
+  margin-right: 0%;
+  width: 12%;
+}
+@media screen and (min-width: 767px) {
+  .navbar .container-fluid .navbar-brand .logoWeb {
+    height: 4%;
+    width: 44%;
+    transition: transform 0.9s;
+  }
+}
+@media screen and (max-width: 767px) {
+  .navbar .container-fluid .navbar-brand .logoWeb {
+    height: 100%;
+    width: 100%;
+  }
+}
+.navbar .container-fluid .navbar-brand .logoWeb:hover {
+  transform: scale(1.1, 1.1);
+}
+@media screen and (min-width: 767px) {
+  .navbar .container-fluid .navbar-brand .flechaAtras {
+    height: 28%;
+    width: 28%;
+    transition: transform 0.9s;
+  }
+}
+@media screen and (max-width: 767px) {
+  .navbar .container-fluid .navbar-brand .flechaAtras {
+    height: 55%;
+    width: 55%;
+  }
+}
+@media screen and (max-width: 400px) {
+  .navbar .container-fluid .navbar-brand .flechaAtras {
+    height: 77%;
+    width: 77%;
+  }
+}
+.navbar .container-fluid .navbar-brand .flechaAtras:hover {
+  transform: scale(1.3, 1.3);
+}
+@media screen and (min-width: 576px) {
+  .navbar .container-fluid .navbar-collapse {
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+    align-items: end;
+    width: 22%;
+  }
+}
+@media screen and (max-width: 576px) {
+  .navbar .container-fluid .navbar-collapse {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+  }
+}
+.navbar .container-fluid .navbar-collapse .nav-item {
+  margin-right: 2rem;
+}
+.navbar .container-fluid .navbar-collapse .seccion, .navbar .container-fluid .navbar-collapse .seccionActual {
+  font-family: "Montserrat";
+  color: black;
+  font-size: 1.5rem;
+  font-weight: normal;
+  font-style: normal;
+  letter-spacing: 0.03rem;
+  text-decoration: none;
+  transition: color 0.4s;
+}
+.navbar .container-fluid .navbar-collapse .seccion:hover, .navbar .container-fluid .navbar-collapse .seccionActual:hover {
+  color: #8400EC;
+}
+.navbar .container-fluid .navbar-collapse .seccionActual {
+  font-weight: bold;
+}
+
+.margenes {
+  margin-left: 30px;
+  margin-right: 30px;
+  overflow: hidden;
+  /*inicio de pagina*/
+  /*grilla de libros*/
+}
+@media screen and (min-width: 767px) {
+  .margenes .inicio {
+    grid-area: main;
+    display: grid;
+    grid-template-areas: "titulo titulo libro libro" "titulo titulo libro libro" "titulo titulo libro libro" ". . libro libro" "detalle detalle libro libro";
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+    height: 766px;
+    padding-top: 3%;
+    overflow: hidden;
+  }
+}
+@media screen and (max-width: 767px) {
+  .margenes .inicio {
+    grid-area: main;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+}
+.margenes .inicio .titulo {
+  grid-area: titulo;
+}
+@media screen and (min-width: 900px) {
+  .margenes .inicio .titulo .tituloPrincipal {
+    font-family: "hatton";
+    font-size: 6rem;
+    font-weight: bold;
+    font-style: bold;
+    text-align: left;
+    line-height: 7rem;
+  }
+}
+@media screen and (max-width: 900px) {
+  .margenes .inicio .titulo .tituloPrincipal {
+    font-family: "hatton";
+    font-size: 5rem;
+    font-weight: bold;
+    font-style: bold;
+    text-align: left;
+    line-height: 6rem;
+  }
+}
+@media screen and (max-width: 767px) {
+  .margenes .inicio .titulo .tituloPrincipal {
+    font-family: "hatton";
+    font-size: 6.5rem;
+    font-weight: bold;
+    font-style: bold;
+    text-align: left;
+    line-height: 7rem;
+    margin-top: 11%;
+  }
+}
+.margenes .inicio .libro {
+  grid-area: libro;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 13%;
+  padding-right: 11%;
+  height: 100%;
+  width: 100%;
+}
+.margenes .inicio .libro .libroHome {
+  height: 100%;
+  transition: transform 1.7s;
+}
+.margenes .inicio .libro .libroHome:hover {
+  transform: scale(1.2, 1.2);
+}
+.margenes .inicio .detalle {
+  grid-area: detalle;
+}
+.margenes .inicio .detalle .lista {
+  list-style-type: none;
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  align-items: start;
+  padding-left: 0%;
+}
+.margenes .inicio .detalle .lista .etiqueta {
+  color: #8400EC;
+  font-family: "Montserrat";
+  font-size: 1.3rem;
+  font-weight: bold;
+  font-style: normal;
+  letter-spacing: 0.05rem;
+  text-align: left;
+  line-height: 1rem;
+  margin-right: 0.4rem;
+  margin-top: 25%;
+}
+.margenes .inicio .detalle .lista .textoDetalle {
+  font-family: "Montserrat";
+  font-size: 1.4rem;
+  font-weight: normal;
+  font-style: normal;
+  letter-spacing: 0.05rem;
+  text-align: left;
+  width: 100%;
+  line-height: 2rem;
+  margin-bottom: 0%;
+}
+.margenes .seccionGrilla {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  margin-top: 125px;
+}
+.margenes .seccionGrilla .subtitulo {
+  font-family: "hatton";
+  font-size: 2.7rem;
+  font-weight: bold;
+  font-style: normal;
+  text-align: left;
+}
+@media screen and (min-width: 576px) {
+  .margenes .seccionGrilla .textoGrill {
+    width: 39.7%;
+  }
+}
+.margenes .seccionGrilla .textoGrill .texto {
+  font-family: "Montserrat";
+  font-size: 1.3rem;
+  font-weight: normal;
+  font-style: normal;
+  letter-spacing: 0.05rem;
+  text-align: left;
+  width: 100%;
+  line-height: 2rem;
+}
+.margenes .grilla {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-evenly;
+  align-items: center;
+  margin-top: 27px;
+}
+.margenes .grilla .articulo {
+  height: 308px;
+  width: 206px;
+  padding: 20px 20px 5px 0px;
+  transition: transform 0.5s, opacity 0.9s;
+}
+.margenes .grilla .articulo:hover {
+  transform: rotate(6deg);
+  opacity: 77%;
+}
+
+/*grilla de datos*/
+@media screen and (min-width: 767px) {
+  .containerDatos {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 99%;
+    margin-top: 17%;
+  }
+}
+@media screen and (max-width: 767px) {
+  .containerDatos {
+    height: 1222px;
+    margin-top: 0%;
+    display: flex;
+    width: 99.5%;
+    flex-direction: column;
+    justify-content: center;
+  }
+}
+.containerDatos .grillaFotoMacro {
+  height: 700px;
+  overflow: hidden;
+  padding: 0%;
+}
+.containerDatos .grillaFotoMacro .fotoImagenV {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  width: 100%;
+}
+.containerDatos .grillaDatosMacro {
+  margin: 0%;
+}
+.containerDatos .grillaDatosMacro .grillaDatos {
+  display: flex;
+  flex-direction: column;
+  height: 350px;
+  margin: 0%;
+  padding: 0%;
+}
+.containerDatos .grillaDatosMacro .grillaDatos .textoGrillaD {
+  border: solid 0.1rem black;
+  padding: 6%;
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: space-between;
+  align-items: start;
+  margin: 0%;
+  height: 100%;
+  width: 100%;
+}
+@media screen and (min-width: 767px) {
+  .containerDatos .grillaDatosMacro .grillaDatos .textoGrillaD .tituloDatosIndex {
+    font-family: "hatton";
+    font-size: 1.5rem;
+    font-weight: bold;
+    font-style: normal;
+    text-align: left;
+    margin-bottom: 5%;
+  }
+}
+@media screen and (max-width: 767px) {
+  .containerDatos .grillaDatosMacro .grillaDatos .textoGrillaD .tituloDatosIndex {
+    font-family: "hatton";
+    font-size: 2.3rem;
+    font-weight: bold;
+    font-style: normal;
+    text-align: left;
+    margin-bottom: 5%;
+  }
+}
+@media screen and (min-width: 485px) {
+  .containerDatos .grillaDatosMacro .grillaDatos .textoGrillaD .textoChicoIndex {
+    font-family: "Montserrat";
+    font-size: 1.2rem;
+    font-weight: normal;
+    font-style: normal;
+    letter-spacing: 0.05rem;
+    text-align: left;
+    line-height: 1.3rem;
+  }
+}
+@media screen and (max-width: 485px) {
+  .containerDatos .grillaDatosMacro .grillaDatos .textoGrillaD .textoChicoIndex {
+    font-family: "Montserrat";
+    font-size: 1.7rem;
+    font-weight: normal;
+    font-style: normal;
+    letter-spacing: 0.05rem;
+    text-align: left;
+    line-height: 2.6rem;
+  }
+}
+@media screen and (min-width: 1000px) {
+  .containerDatos .grillaDatosMacro .grillaDatos .textoGrillaD .boton {
+    background-color: white;
+    border: solid 0.15rem #8400EC;
+    border-radius: 3rem;
+    padding-left: 4%;
+    padding-right: 2%;
+    overflow: hidden;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    align-items: center;
+    width: 60%;
+    height: 12%;
+  }
+}
+@media screen and (max-width: 1000px) {
+  .containerDatos .grillaDatosMacro .grillaDatos .textoGrillaD .boton {
+    background-color: white;
+    border: solid 0.15rem #8400EC;
+    border-radius: 3rem;
+    padding-left: 4%;
+    padding-right: 2%;
+    overflow: hidden;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    align-items: center;
+    width: 80%;
+    height: 12%;
+  }
+}
+@media screen and (max-width: 767px) {
+  .containerDatos .grillaDatosMacro .grillaDatos .textoGrillaD .boton {
+    background-color: white;
+    border: solid 0.15rem #8400EC;
+    border-radius: 3rem;
+    padding-left: 3%;
+    padding-right: 1.5%;
+    overflow: hidden;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    align-items: center;
+    width: 33%;
+    height: 19%;
+  }
+}
+@media screen and (max-width: 485px) {
+  .containerDatos .grillaDatosMacro .grillaDatos .textoGrillaD .boton {
+    border: solid 0.15rem #8400EC;
+    border-radius: 3rem;
+    padding-left: 3%;
+    padding-right: 1.5%;
+    overflow: hidden;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    align-items: center;
+    width: 88%;
+    height: 19%;
+  }
+}
+@media screen and (min-width: 485px) {
+  .containerDatos .grillaDatosMacro .grillaDatos .textoGrillaD .boton {
+    border: solid 0.15rem #8400EC;
+    border-radius: 3rem;
+    padding-left: 3%;
+    padding-right: 1.5%;
+    overflow: hidden;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    align-items: center;
+    width: 88%;
+    height: 19%;
+    transition: background-color 1s, height 0.5s, width 0.5s;
+  }
+}
+.containerDatos .grillaDatosMacro .grillaDatos .textoGrillaD .boton:hover {
+  background-color: #ebd5fc;
+}
+.containerDatos .grillaDatosMacro .grillaDatos .textoGrillaD .boton:active {
+  height: 22%;
+  width: 99%;
+}
+@media screen and (min-width: 400px) {
+  .containerDatos .grillaDatosMacro .grillaDatos .textoGrillaD .boton .textoBotonIndex {
+    color: #8400EC;
+    font-family: "Montserrat";
+    font-size: 1rem;
+    font-weight: bold;
+    font-style: normal;
+    letter-spacing: 0.03rem;
+    text-align: left;
+    text-decoration: none;
+    align-items: center;
+  }
+}
+@media screen and (max-width: 400px) {
+  .containerDatos .grillaDatosMacro .grillaDatos .textoGrillaD .boton .textoBotonIndex {
+    color: #8400EC;
+    font-family: "Montserrat";
+    font-size: 1.4rem;
+    font-weight: bold;
+    font-style: normal;
+    letter-spacing: 0.03rem;
+    text-align: left;
+    text-decoration: none;
+    align-items: center;
+  }
+}
+@media screen and (min-width: 400px) {
+  .containerDatos .grillaDatosMacro .grillaDatos .textoGrillaD .boton .flechaDescubri {
+    height: 70%;
+  }
+}
+@media screen and (max-width: 400px) {
+  .containerDatos .grillaDatosMacro .grillaDatos .textoGrillaD .boton .flechaDescubri {
+    height: 60%;
+  }
+}
+.containerDatos .grillaDatosMacro .fotoImagenH {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  width: 100%;
+}
+
+/*footer*/
+.footer .subtituloF {
+  color: white;
+  font-family: "Montserrat";
+  font-size: 1.5rem;
+  font-weight: bold;
+  font-style: normal;
+  letter-spacing: 0.5px;
+  margin: 0%;
+  padding: 0%;
+}
+.footer .textoChicoF {
+  list-style-type: none;
+  text-decoration: none;
+  color: white;
+  font-family: "Montserrat";
+  font-size: 1.3rem;
+  font-weight: lighter;
+  font-style: normal;
+  letter-spacing: 0.05rem;
+  text-align: left;
+  line-height: 2.2rem;
+  margin: 0%;
+  padding: 0%;
+}
+
+/*MEDIA QUERIES*/
+/*tamaños desk*/
+/*tamaños tablet*/
+/*tamaños mobile*/
+/*fuentes*/
+@font-face {
+  font-family: "hatton";
+  src: url("../fonts/PPHatton-Bold.ttf") format("truetype");
+  font-weight: bold;
+}
+@font-face {
+  font-family: "hatton";
+  src: url("../fonts/PPHatton-Medium.ttf") format("truetype");
+  font-weight: normal;
+}
+@font-face {
+  font-family: "hatton";
+  src: url("../fonts/PPHatton-Ultralight.ttf") format("truetype");
+  font-weight: lighter;
+}
+/*variables*/
+/*barra de navegacion*/
+/*footer*/
+/*estilos generales*/
+.html {
+  font-size: 62.5%;
+}
+
+/*barra de navegacion*/
+.navbar .container-fluid {
+  border-bottom: solid 0.1rem black;
+  margin-bottom: -0.5%;
+}
+.navbar .container-fluid .navbar-brand {
+  margin-right: 0%;
+  width: 12%;
+}
+@media screen and (min-width: 767px) {
+  .navbar .container-fluid .navbar-brand .logoWeb {
+    height: 4%;
+    width: 44%;
+    transition: transform 0.9s;
+  }
+}
+@media screen and (max-width: 767px) {
+  .navbar .container-fluid .navbar-brand .logoWeb {
+    height: 100%;
+    width: 100%;
+  }
+}
+.navbar .container-fluid .navbar-brand .logoWeb:hover {
+  transform: scale(1.1, 1.1);
+}
+@media screen and (min-width: 767px) {
+  .navbar .container-fluid .navbar-brand .flechaAtras {
+    height: 28%;
+    width: 28%;
+    transition: transform 0.9s;
+  }
+}
+@media screen and (max-width: 767px) {
+  .navbar .container-fluid .navbar-brand .flechaAtras {
+    height: 55%;
+    width: 55%;
+  }
+}
+@media screen and (max-width: 400px) {
+  .navbar .container-fluid .navbar-brand .flechaAtras {
+    height: 77%;
+    width: 77%;
+  }
+}
+.navbar .container-fluid .navbar-brand .flechaAtras:hover {
+  transform: scale(1.3, 1.3);
+}
+@media screen and (min-width: 576px) {
+  .navbar .container-fluid .navbar-collapse {
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+    align-items: end;
+    width: 22%;
+  }
+}
+@media screen and (max-width: 576px) {
+  .navbar .container-fluid .navbar-collapse {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+  }
+}
+.navbar .container-fluid .navbar-collapse .nav-item {
+  margin-right: 2rem;
+}
+.navbar .container-fluid .navbar-collapse .seccion, .navbar .container-fluid .navbar-collapse .seccionActual {
+  font-family: "Montserrat";
+  color: black;
+  font-size: 1.5rem;
+  font-weight: normal;
+  font-style: normal;
+  letter-spacing: 0.03rem;
+  text-decoration: none;
+  transition: color 0.4s;
+}
+.navbar .container-fluid .navbar-collapse .seccion:hover, .navbar .container-fluid .navbar-collapse .seccionActual:hover {
+  color: #8400EC;
+}
+.navbar .container-fluid .navbar-collapse .seccionActual {
+  font-weight: bold;
+}
+
+.margenes {
+  margin-left: 30px;
+  margin-right: 30px;
+  overflow: hidden;
+  /*sobre autor*/
+  /*libros del autor*/
+  /*video autor*/
+}
+.margenes .autor {
+  height: 600px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin-top: 5%;
+}
+.margenes .autor .autorDisplay {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+  padding-left: 0%;
+  padding-right: 0%;
+}
+@media screen and (min-width: 400px) {
+  .margenes .autor .autorDisplay .tituloAutor {
+    font-family: "hatton";
+    font-size: 5rem;
+    font-weight: bold;
+    font-style: normal;
+    text-align: left;
+    line-height: 6.5rem;
+    width: 100%;
+  }
+}
+@media screen and (max-width: 400px) {
+  .margenes .autor .autorDisplay .tituloAutor {
+    font-family: "hatton";
+    font-size: 3.1rem;
+    font-weight: bold;
+    font-style: normal;
+    text-align: left;
+    line-height: 4rem;
+    width: 100%;
+  }
+}
+@media screen and (min-width: 400px) {
+  .margenes .autor .autorDisplay .detalleAutor {
+    font-family: "hatton";
+    font-size: 2rem;
+    font-weight: lighter;
+    font-style: normal;
+    text-align: left;
+    line-height: 3rem;
+  }
+}
+@media screen and (max-width: 400px) {
+  .margenes .autor .autorDisplay .detalleAutor {
+    font-family: "hatton";
+    font-size: 1.6rem;
+    font-weight: lighter;
+    font-style: normal;
+    text-align: left;
+    line-height: 2rem;
+  }
+}
+.margenes .autor .autorDisplay .textoAutor {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  width: 95%;
+}
+.margenes .autor .autorDisplay .textoAutor .textoBold {
+  color: #8400EC;
+  font-family: "Montserrat";
+  font-size: 1.1rem;
+  font-weight: bold;
+  font-style: normal;
+  letter-spacing: 0.05rem;
+  text-align: left;
+  width: 100%;
+  line-height: 1.6rem;
+}
+.margenes .autor .autorDisplay .textoAutor .texto {
+  font-family: "Montserrat";
+  font-size: 1.1rem;
+  font-weight: normal;
+  font-style: normal;
+  letter-spacing: 0.05rem;
+  text-align: left;
+  width: 100%;
+  line-height: 1.6rem;
+}
+@media screen and (min-width: 1000px) {
+  .margenes .autor .imagenAutor {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-areas: "libroArriba libroAbajo" "libroArriba libroAbajo" "libroArriba libroAbajo" "libroArriba libroAbajo" "libroArriba libroAbajo" "libroArriba libroAbajo";
+    margin-right: 95%;
+  }
+  .margenes .autor .imagenAutor .libroAbajo {
+    grid-area: libroAabajo;
+    grid-column: 1;
+    grid-row: 1/span 3;
+    width: 100%;
+    height: 100%;
+  }
+  .margenes .autor .imagenAutor .libroAbajo .libroAutorDestacadoAbajo {
+    height: 595px;
+  }
+  .margenes .autor .imagenAutor .libroArriba {
+    grid-area: libroArriba;
+    grid-column: 1;
+    grid-row: 2;
+    align-items: center;
+    justify-self: center;
+  }
+  .margenes .autor .imagenAutor .libroArriba .libroAutorDestacadoArriba {
+    height: 500px;
+    padding-top: 16%;
+  }
+  .margenes .autor .imagenAutor .libroArriba .libroAutorDestacadoArriba:hover {
+    transform: scale(1.15, 1.15);
+  }
+  .margenes .autor .imagenAutor .libroArriba .rotate-scale-down {
+    -webkit-animation: rotate-scale-down 0.65s linear 0.5s forwards;
+    animation: rotate-scale-down 0.65s linear 0.5s forwards;
+  }
+  @-webkit-keyframes rotate-scale-down {
+    0% {
+      -webkit-transform: scale(1) rotateZ(0);
+      transform: scale(1) rotateZ(0);
+    }
+    50% {
+      -webkit-transform: scale(0.5) rotateZ(180deg);
+      transform: scale(0.5) rotateZ(180deg);
+    }
+    100% {
+      -webkit-transform: scale(1) rotateZ(360deg);
+      transform: scale(1) rotateZ(360deg);
+    }
+  }
+  @keyframes rotate-scale-down {
+    0% {
+      -webkit-transform: scale(1) rotateZ(0);
+      transform: scale(1) rotateZ(0);
+    }
+    50% {
+      -webkit-transform: scale(0.5) rotateZ(180deg);
+      transform: scale(0.5) rotateZ(180deg);
+    }
+    100% {
+      -webkit-transform: scale(1) rotateZ(360deg);
+      transform: scale(1) rotateZ(360deg);
+    }
+  }
+}
+@media screen and (max-width: 1000px) {
+  .margenes .autor .imagenAutor {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-areas: "libroArriba libroAbajo" "libroArriba libroAbajo" "libroArriba libroAbajo" "libroArriba libroAbajo" "libroArriba libroAbajo" "libroArriba libroAbajo";
+    margin-left: 10%;
+  }
+  .margenes .autor .imagenAutor .libroAbajo {
+    grid-area: libroAabajo;
+    grid-column: 1;
+    grid-row: 1/span 3;
+    width: 100%;
+    height: 100%;
+  }
+  .margenes .autor .imagenAutor .libroAbajo .libroAutorDestacadoAbajo {
+    height: 595px;
+  }
+  .margenes .autor .imagenAutor .libroArriba {
+    grid-area: libroArriba;
+    grid-column: 1;
+    grid-row: 2;
+    align-items: center;
+    justify-self: center;
+  }
+  .margenes .autor .imagenAutor .libroArriba .libroAutorDestacadoArriba {
+    height: 500px;
+    padding-top: 18%;
+  }
+}
+.margenes .grillaLibrosAutor {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
+  align-items: start;
+  margin-top: 11%;
+}
+@media screen and (min-width: 767px) {
+  .margenes .grillaLibrosAutor .librosAutor {
+    list-style-type: none;
+    font-family: "hatton";
+    font-size: 3rem;
+    font-weight: normal;
+    font-style: normal;
+    text-align: left;
+    text-decoration: none;
+    color: black;
+    transition: all 0.3s;
+  }
+}
+@media screen and (max-width: 767px) {
+  .margenes .grillaLibrosAutor .librosAutor {
+    list-style-type: none;
+    font-family: "hatton";
+    font-size: 2.3rem;
+    font-weight: normal;
+    font-style: normal;
+    text-align: left;
+    text-decoration: none;
+  }
+}
+.margenes .grillaLibrosAutor .librosAutor:hover {
+  color: #8400EC;
+}
+.margenes .grillaLibrosAutor .librosAutor:active {
+  font-weight: bold;
+  font-size: 2.5rem;
+  margin-top: 0.4%;
+}
+.margenes .video {
+  margin-bottom: 7%;
+}
+.margenes .video .seccionGrilla {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  margin-top: 125px;
+}
+.margenes .video .seccionGrilla .subtitulo {
+  font-family: "hatton";
+  font-size: 2.7rem;
+  font-weight: bold;
+  font-style: normal;
+  text-align: left;
+}
+@media screen and (min-width: 767px) {
+  .margenes .video .seccionGrilla .textoGrill {
+    width: 39.7%;
+  }
+}
+@media screen and (max-width: 767px) {
+  .margenes .video .seccionGrilla .textoGrill {
+    width: 77.7%;
+  }
+}
+.margenes .video .seccionGrilla .textoGrill .texto {
+  font-family: "Montserrat";
+  font-size: 1.3rem;
+  font-weight: normal;
+  font-style: normal;
+  letter-spacing: 0.05rem;
+  text-align: left;
+  width: 100%;
+  line-height: 2rem;
+}
+
+/*footer*/
+.footer .subtituloF {
+  color: white;
+  font-family: "Montserrat";
+  font-size: 1.5rem;
+  font-weight: bold;
+  font-style: normal;
+  letter-spacing: 0.5px;
+  margin: 0%;
+  padding: 0%;
+}
+.footer .textoChicoF {
+  list-style-type: none;
+  text-decoration: none;
+  color: white;
+  font-family: "Montserrat";
+  font-size: 1.3rem;
+  font-weight: lighter;
+  font-style: normal;
+  letter-spacing: 0.05rem;
+  text-align: left;
+  line-height: 2.2rem;
+  margin: 0%;
+  padding: 0%;
+}
+
+/*MEDIA QUERIES*/
+/*tamaños desk*/
+/*tamaños tablet*/
+/*tamaños mobile*/
+/*fuentes*/
+@font-face {
+  font-family: "hatton";
+  src: url("../fonts/PPHatton-Bold.ttf") format("truetype");
+  font-weight: bold;
+}
+@font-face {
+  font-family: "hatton";
+  src: url("../fonts/PPHatton-Medium.ttf") format("truetype");
+  font-weight: normal;
+}
+@font-face {
+  font-family: "hatton";
+  src: url("../fonts/PPHatton-Ultralight.ttf") format("truetype");
+  font-weight: lighter;
+}
+/*variables*/
+/*barra de navegacion*/
+/*footer*/
+/*estilos generales*/
+.html {
+  font-size: 62.5%;
+}
+
+/*barra de navegacion*/
+.navbar .container-fluid {
+  border-bottom: solid 0.1rem black;
+  margin-bottom: -0.5%;
+}
+.navbar .container-fluid .navbar-brand {
+  margin-right: 0%;
+  width: 12%;
+}
+@media screen and (min-width: 767px) {
+  .navbar .container-fluid .navbar-brand .logoWeb {
+    height: 4%;
+    width: 44%;
+    transition: transform 0.9s;
+  }
+}
+@media screen and (max-width: 767px) {
+  .navbar .container-fluid .navbar-brand .logoWeb {
+    height: 100%;
+    width: 100%;
+  }
+}
+.navbar .container-fluid .navbar-brand .logoWeb:hover {
+  transform: scale(1.1, 1.1);
+}
+@media screen and (min-width: 767px) {
+  .navbar .container-fluid .navbar-brand .flechaAtras {
+    height: 28%;
+    width: 28%;
+    transition: transform 0.9s;
+  }
+}
+@media screen and (max-width: 767px) {
+  .navbar .container-fluid .navbar-brand .flechaAtras {
+    height: 55%;
+    width: 55%;
+  }
+}
+@media screen and (max-width: 400px) {
+  .navbar .container-fluid .navbar-brand .flechaAtras {
+    height: 77%;
+    width: 77%;
+  }
+}
+.navbar .container-fluid .navbar-brand .flechaAtras:hover {
+  transform: scale(1.3, 1.3);
+}
+@media screen and (min-width: 576px) {
+  .navbar .container-fluid .navbar-collapse {
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+    align-items: end;
+    width: 22%;
+  }
+}
+@media screen and (max-width: 576px) {
+  .navbar .container-fluid .navbar-collapse {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+  }
+}
+.navbar .container-fluid .navbar-collapse .nav-item {
+  margin-right: 2rem;
+}
+.navbar .container-fluid .navbar-collapse .seccion, .navbar .container-fluid .navbar-collapse .seccionActual {
+  font-family: "Montserrat";
+  color: black;
+  font-size: 1.5rem;
+  font-weight: normal;
+  font-style: normal;
+  letter-spacing: 0.03rem;
+  text-decoration: none;
+  transition: color 0.4s;
+}
+.navbar .container-fluid .navbar-collapse .seccion:hover, .navbar .container-fluid .navbar-collapse .seccionActual:hover {
+  color: #8400EC;
+}
+.navbar .container-fluid .navbar-collapse .seccionActual {
+  font-weight: bold;
+}
+
+.margenes {
+  margin-left: 30px;
+  margin-right: 30px;
+  overflow: hidden;
+  /*titulo libro*/
+  /*detalle del libro*/
+  /*punteo del libro*/
+}
+.margenes .tituloLibro {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 2fr 1fr;
+  grid-template-areas: "tituloLibro" "subtituloCategoria";
+  height: 620px;
+}
+@media screen and (min-width: 900px) {
+  .margenes .tituloLibro .tituloPrincipalLibro {
+    grid-area: tituloLibro;
+    font-family: "hatton";
+    font-size: 7rem;
+    font-weight: bold;
+    font-style: normal;
+    text-align: left;
+    line-height: 9.5rem;
+    width: 1000px;
+    margin-top: 6%;
+  }
+}
+@media screen and (max-width: 900px) {
+  .margenes .tituloLibro .tituloPrincipalLibro {
+    grid-area: tituloLibro;
+    font-family: "hatton";
+    font-size: 4.7rem;
+    font-weight: bold;
+    font-style: normal;
+    text-align: left;
+    line-height: 6rem;
+    width: 1000px;
+    margin-top: 6%;
+  }
+}
+@media screen and (max-width: 576px) {
+  .margenes .tituloLibro .tituloPrincipalLibro {
+    grid-area: tituloLibro;
+    font-family: "hatton";
+    font-size: 4rem;
+    font-weight: bold;
+    font-style: normal;
+    text-align: left;
+    line-height: 4.5rem;
+    width: 100px;
+    margin-top: 6%;
+  }
+}
+@media screen and (max-width: 400px) {
+  .margenes .tituloLibro .tituloPrincipalLibro {
+    grid-area: tituloLibro;
+    font-family: "hatton";
+    font-size: 3rem;
+    font-weight: bold;
+    font-style: normal;
+    text-align: left;
+    line-height: 3.5rem;
+    width: 100px;
+    margin-top: 6%;
+  }
+}
+.margenes .tituloLibro .subtituloCategoria {
+  grid-area: subtituloCategoria;
+  border-top: solid 0.1rem black;
+  border-bottom: solid 0.1rem black;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  align-items: center;
+  height: 33%;
+}
+.margenes .tituloLibro .subtituloCategoria .textoCategoria {
+  font-family: "Montserrat";
+  font-size: 1.2rem;
+  font-weight: normal;
+  font-style: normal;
+  letter-spacing: 0.05rem;
+  text-align: left;
+  width: 50%;
+  margin-top: 1%;
+  line-height: 1.3rem;
+}
+.margenes .tituloLibro .subtituloCategoria .flechaBotonCategoria {
+  width: 3%;
+}
+.margenes .detalleLibro .colPadding {
+  padding-left: 0%;
+}
+@media screen and (min-width: 1000px) {
+  .margenes .detalleLibro .colPadding .libroGrande {
+    width: 533px;
+    padding-right: 11%;
+  }
+}
+@media screen and (max-width: 485px) {
+  .margenes .detalleLibro .colPadding .libroGrande {
+    width: 290px;
+  }
+}
+.margenes .detalleLibro .textoLibro {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+@media screen and (min-width: 576px) {
+  .margenes .detalleLibro .textoLibro .tituloLightChico {
+    font-family: "hatton";
+    font-size: 3rem;
+    font-weight: normal;
+    font-style: normal;
+    text-align: left;
+    text-decoration: none;
+    color: black;
+    transition: all 1s;
+  }
+}
+@media screen and (max-width: 576px) {
+  .margenes .detalleLibro .textoLibro .tituloLightChico {
+    font-family: "hatton";
+    font-size: 2.5rem;
+    font-weight: normal;
+    font-style: normal;
+    text-align: left;
+    text-decoration: none;
+    color: black;
+  }
+}
+.margenes .detalleLibro .textoLibro .tituloLightChico:hover {
+  color: #8400EC;
+  font-weight: bold;
+}
+.margenes .detalleLibro .descripcionLibro {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+}
+.margenes .detalleLibro .descripcionLibro .textoBold {
+  color: #8400EC;
+  font-family: "Montserrat";
+  font-size: 1rem;
+  font-weight: bold;
+  font-style: normal;
+  letter-spacing: 0.05rem;
+  text-align: left;
+  width: 100%;
+  line-height: 1.3rem;
+  margin-top: 4%;
+}
+.margenes .detalleLibro .descripcionLibro .texto {
+  font-family: "Montserrat";
+  font-size: 1rem;
+  font-weight: normal;
+  font-style: normal;
+  letter-spacing: 0.05rem;
+  text-align: left;
+  width: 100%;
+  line-height: 1.3rem;
+}
+@media screen and (min-width: 1000px) {
+  .margenes .detalleLibro .descripcionLibro .boton {
+    border: solid 0.15rem #8400EC;
+    border-radius: 3rem;
+    padding-left: 4%;
+    padding-right: 2%;
+    overflow: hidden;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    align-items: center;
+    width: 40%;
+    height: 12%;
+    transition: background-color 1s;
+  }
+}
+@media screen and (max-width: 1000px) {
+  .margenes .detalleLibro .descripcionLibro .boton {
+    border: solid 0.15rem #8400EC;
+    border-radius: 3rem;
+    padding-left: 4%;
+    padding-right: 2%;
+    overflow: hidden;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    align-items: center;
+    width: 60%;
+    height: 12%;
+  }
+}
+@media screen and (max-width: 767px) {
+  .margenes .detalleLibro .descripcionLibro .boton {
+    border: solid 0.15rem #8400EC;
+    border-radius: 3rem;
+    padding-left: 3%;
+    padding-right: 1.5%;
+    overflow: hidden;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    align-items: center;
+    width: 33%;
+    height: 12%;
+  }
+}
+@media screen and (max-width: 485px) {
+  .margenes .detalleLibro .descripcionLibro .boton {
+    border: solid 0.15rem #8400EC;
+    border-radius: 3rem;
+    padding-left: 3%;
+    padding-right: 1.5%;
+    overflow: hidden;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    align-items: center;
+    width: 60%;
+    height: 12%;
+  }
+}
+@media screen and (min-width: 485px) {
+  .margenes .detalleLibro .descripcionLibro .boton {
+    border: solid 0.15rem #8400EC;
+    border-radius: 3rem;
+    padding-left: 3%;
+    padding-right: 1.5%;
+    overflow: hidden;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    align-items: center;
+    width: 60%;
+    height: 12%;
+  }
+}
+.margenes .detalleLibro .descripcionLibro .boton:hover {
+  background-color: #ebd5fc;
+}
+@media screen and (min-width: 400px) {
+  .margenes .detalleLibro .descripcionLibro .boton .textoBotonIndex {
+    color: #8400EC;
+    font-family: "Montserrat";
+    font-size: 1rem;
+    font-weight: bold;
+    font-style: normal;
+    letter-spacing: 0.03rem;
+    text-align: left;
+    text-decoration: none;
+    align-items: center;
+  }
+}
+@media screen and (max-width: 400px) {
+  .margenes .detalleLibro .descripcionLibro .boton .textoBotonIndex {
+    color: #8400EC;
+    font-family: "Montserrat";
+    font-size: 1.2rem;
+    font-weight: bold;
+    font-style: normal;
+    letter-spacing: 0.03rem;
+    text-align: left;
+    text-decoration: none;
+    align-items: center;
+    line-height: 1.4rem;
+  }
+}
+@media screen and (min-width: 400px) {
+  .margenes .detalleLibro .descripcionLibro .boton .flechaDescubri {
+    height: 70%;
+  }
+}
+@media screen and (max-width: 400px) {
+  .margenes .detalleLibro .descripcionLibro .boton .flechaDescubri {
+    height: 60%;
+  }
+}
+.margenes .containerPunteo {
+  margin-top: 10%;
+}
+.margenes .containerPunteo .infoAdicional {
+  padding-bottom: 5%;
+  padding-top: 5%;
+  border-top: solid 0.1rem black;
+  transition: background-color 0.5s;
+}
+.margenes .containerPunteo .infoAdicional:hover {
+  background-color: #e5e5e5;
+}
+.margenes .containerPunteo .infoAdicional .infoAdicionalCentrado {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+@media screen and (min-width: 576px) {
+  .margenes .containerPunteo .infoAdicional .infoAdicionalCentrado .tituloPunteo {
+    font-family: "hatton";
+    font-size: 2.3rem;
+    font-weight: bold;
+    font-style: normal;
+    text-align: left;
+    margin-bottom: 0%;
+    width: 33%;
+  }
+}
+@media screen and (max-width: 576px) {
+  .margenes .containerPunteo .infoAdicional .infoAdicionalCentrado .tituloPunteo {
+    grid-area: tituloLibro;
+    font-family: "hatton";
+    font-size: 2rem;
+    font-weight: bold;
+    font-style: normal;
+    text-align: left;
+    margin-bottom: 3%;
+    width: 33%;
+  }
+}
+@media screen and (min-width: 1000px) {
+  .margenes .containerPunteo .infoAdicional .infoAdicionalCentrado .flechaBotonDescripcion {
+    height: 58%;
+    width: 45%;
+  }
+}
+@media screen and (max-width: 1000px) {
+  .margenes .containerPunteo .infoAdicional .infoAdicionalCentrado .flechaBotonDescripcion {
+    height: 38%;
+    width: 66%;
+  }
+}
+.margenes .containerPunteo .infoAdicional .infoAdicionalCentrado .texto {
+  font-family: "Montserrat";
+  font-size: 1rem;
+  font-weight: normal;
+  font-style: normal;
+  letter-spacing: 0.05rem;
+  text-align: left;
+  width: 100%;
+  line-height: 1.3rem;
+}
+
+/*footer*/
+.footer .subtituloF {
+  color: white;
+  font-family: "Montserrat";
+  font-size: 1.5rem;
+  font-weight: bold;
+  font-style: normal;
+  letter-spacing: 0.5px;
+  margin: 0%;
+  padding: 0%;
+}
+.footer .textoChicoF {
+  list-style-type: none;
+  text-decoration: none;
+  color: white;
+  font-family: "Montserrat";
+  font-size: 1.3rem;
+  font-weight: lighter;
+  font-style: normal;
+  letter-spacing: 0.05rem;
+  text-align: left;
+  line-height: 2.2rem;
+  margin: 0%;
+  padding: 0%;
+}
+
+/*MEDIA QUERIES*/
+/*tamaños desk*/
+/*tamaños tablet*/
+/*tamaños mobile*/
+/*fuentes*/
+@font-face {
+  font-family: "hatton";
+  src: url("../fonts/PPHatton-Bold.ttf") format("truetype");
+  font-weight: bold;
+}
+@font-face {
+  font-family: "hatton";
+  src: url("../fonts/PPHatton-Medium.ttf") format("truetype");
+  font-weight: normal;
+}
+@font-face {
+  font-family: "hatton";
+  src: url("../fonts/PPHatton-Ultralight.ttf") format("truetype");
+  font-weight: lighter;
+}
+/*variables*/
+/*barra de navegacion*/
+/*footer*/
+/*estilos generales*/
+.html {
+  font-size: 62.5%;
+}
+
+/*barra de navegacion*/
+.navbar .container-fluid {
+  border-bottom: solid 0.1rem black;
+  margin-bottom: -0.5%;
+}
+.navbar .container-fluid .navbar-brand {
+  margin-right: 0%;
+  width: 12%;
+}
+@media screen and (min-width: 767px) {
+  .navbar .container-fluid .navbar-brand .logoWeb {
+    height: 4%;
+    width: 44%;
+    transition: transform 0.9s;
+  }
+}
+@media screen and (max-width: 767px) {
+  .navbar .container-fluid .navbar-brand .logoWeb {
+    height: 100%;
+    width: 100%;
+  }
+}
+.navbar .container-fluid .navbar-brand .logoWeb:hover {
+  transform: scale(1.1, 1.1);
+}
+@media screen and (min-width: 767px) {
+  .navbar .container-fluid .navbar-brand .flechaAtras {
+    height: 28%;
+    width: 28%;
+    transition: transform 0.9s;
+  }
+}
+@media screen and (max-width: 767px) {
+  .navbar .container-fluid .navbar-brand .flechaAtras {
+    height: 55%;
+    width: 55%;
+  }
+}
+@media screen and (max-width: 400px) {
+  .navbar .container-fluid .navbar-brand .flechaAtras {
+    height: 77%;
+    width: 77%;
+  }
+}
+.navbar .container-fluid .navbar-brand .flechaAtras:hover {
+  transform: scale(1.3, 1.3);
+}
+@media screen and (min-width: 576px) {
+  .navbar .container-fluid .navbar-collapse {
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+    align-items: end;
+    width: 22%;
+  }
+}
+@media screen and (max-width: 576px) {
+  .navbar .container-fluid .navbar-collapse {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+  }
+}
+.navbar .container-fluid .navbar-collapse .nav-item {
+  margin-right: 2rem;
+}
+.navbar .container-fluid .navbar-collapse .seccion, .navbar .container-fluid .navbar-collapse .seccionActual {
+  font-family: "Montserrat";
+  color: black;
+  font-size: 1.5rem;
+  font-weight: normal;
+  font-style: normal;
+  letter-spacing: 0.03rem;
+  text-decoration: none;
+  transition: color 0.4s;
+}
+.navbar .container-fluid .navbar-collapse .seccion:hover, .navbar .container-fluid .navbar-collapse .seccionActual:hover {
+  color: #8400EC;
+}
+.navbar .container-fluid .navbar-collapse .seccionActual {
+  font-weight: bold;
+}
+
+.margenes {
+  margin-left: 30px;
+  margin-right: 30px;
+  overflow: hidden;
+  /*titulo reseñas*/
+  /*detalle libro*/
+  /*formulario*/
+}
+.margenes .portadaReseñas {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-bottom: solid 0.1rem black;
+  height: 333px;
+  /*keyframes*/
+  /*keyframes*/
+  /*keyframes*/
+  /*keyframes*/
+}
+.margenes .portadaReseñas .libroReseñaChico {
+  width: 135px;
+  height: 200px;
+}
+.margenes .portadaReseñas .libroReseñaChico1 {
+  width: 135px;
+  height: 200px;
+  animation-name: aparecer;
+  animation-duration: 1s;
+  animation-iteration-count: 1;
+  animation-delay: 1s;
+}
+@keyframes aparecer {
+  0% {
+    opacity: 100%;
+  }
+  100% {
+    opacity: 0%;
+  }
+}
+.margenes .portadaReseñas .libroReseñaChico2 {
+  width: 135px;
+  height: 200px;
+  animation-name: aparecer;
+  animation-duration: 1s;
+  animation-iteration-count: 1;
+  animation-delay: 1.5s;
+}
+@keyframes aparecer {
+  0% {
+    opacity: 100%;
+  }
+  100% {
+    opacity: 0%;
+  }
+}
+.margenes .portadaReseñas .libroReseñaChico3 {
+  width: 135px;
+  height: 200px;
+  animation-name: aparecer;
+  animation-duration: 1s;
+  animation-iteration-count: 1;
+  animation-delay: 2s;
+}
+@keyframes aparecer {
+  0% {
+    opacity: 100%;
+  }
+  100% {
+    opacity: 0%;
+  }
+}
+.margenes .portadaReseñas .libroReseñaChico4 {
+  width: 135px;
+  height: 200px;
+  animation-name: aparecer;
+  animation-duration: 1s;
+  animation-iteration-count: 1;
+  animation-delay: 2.5s;
+}
+@keyframes aparecer {
+  0% {
+    opacity: 100%;
+  }
+  100% {
+    opacity: 0%;
+  }
+}
+@media screen and (min-width: 576px) {
+  .margenes .portadaReseñas .tituloPrincipalReseñas {
+    font-family: "hatton";
+    font-size: 5.7rem;
+    font-weight: bold;
+    font-style: bold;
+    text-align: left;
+    margin-bottom: 0%;
+  }
+}
+@media screen and (max-width: 576px) {
+  .margenes .portadaReseñas .tituloPrincipalReseñas {
+    font-family: "hatton";
+    font-size: 3rem;
+    font-weight: bold;
+    font-style: bold;
+    text-align: left;
+    margin-bottom: 0%;
+  }
+}
+@media screen and (min-width: 1000px) {
+  .margenes .linea {
+    border-right: solid 0.1rem black;
+    border-left: solid 0.1rem black;
+  }
+}
+@media screen and (max-width: 1000px) {
+  .margenes .linea {
+    border-left: solid 0.1rem black;
+  }
+}
+.margenes .margenesReseña {
+  margin-top: 7%;
+  margin-bottom: 7%;
+}
+@media screen and (min-width: 576px) {
+  .margenes .margenesReseña .card-img {
+    width: 100%;
+    background: none;
+  }
+}
+@media screen and (max-width: 576px) {
+  .margenes .margenesReseña .card-img {
+    width: 100%;
+    background: none;
+    height: 500px;
+    width: 333px;
+  }
+}
+@media screen and (max-width: 400px) {
+  .margenes .margenesReseña .card-img {
+    width: 100%;
+    background: none;
+    height: 311px;
+    width: 211px;
+  }
+}
+@media screen and (min-width: 576px) {
+  .margenes .margenesReseña .card-img-overlay {
+    background-color: black;
+    height: 40%;
+    width: 55%;
+    padding: 5%;
+    display: flex;
+    flex-flow: column;
+    justify-content: space-between;
+    align-items: start;
+    align-self: end;
+    margin-top: 83%;
+    margin-left: 45%;
+    transition: transform 2s;
+  }
+  .margenes .margenesReseña .card-img-overlay:hover {
+    transform: scale(1.1, 1.1);
+  }
+}
+@media screen and (max-width: 576px) {
+  .margenes .margenesReseña .card-img-overlay {
+    background-color: black;
+    height: 35%;
+    width: 79%;
+    padding: 5%;
+    display: flex;
+    flex-flow: column;
+    justify-content: space-between;
+    align-items: start;
+    align-self: end;
+    margin-top: 328px;
+    margin-left: 80%;
+  }
+}
+@media screen and (max-width: 400px) {
+  .margenes .margenesReseña .card-img-overlay {
+    background-color: black;
+    height: 55%;
+    width: 100%;
+    padding: 5%;
+    display: flex;
+    flex-flow: column;
+    justify-content: space-between;
+    align-items: start;
+    align-self: end;
+    margin-top: 142px;
+    margin-left: 64%;
+  }
+}
+.margenes .margenesReseña .card-img-overlay .datosReseña {
+  display: flex;
+  flex-direction: column;
+  padding-top: 0.5%;
+  padding-left: 2%;
+}
+@media screen and (min-width: 1300px) {
+  .margenes .margenesReseña .card-img-overlay .datosReseña .card-title {
+    color: white;
+    font-family: "Montserrat";
+    font-size: 1.1rem;
+    font-weight: normal;
+    font-style: normal;
+    letter-spacing: 0.05rem;
+    text-align: left;
+    width: 100%;
+    line-height: 1.4rem;
+    margin-bottom: 9%;
+  }
+}
+@media screen and (max-width: 1300px) {
+  .margenes .margenesReseña .card-img-overlay .datosReseña .card-title {
+    color: white;
+    font-family: "Montserrat";
+    font-size: 1rem;
+    font-weight: normal;
+    font-style: normal;
+    letter-spacing: 0.05rem;
+    text-align: left;
+    width: 100%;
+    line-height: 1rem;
+    margin-bottom: 8%;
+  }
+}
+@media screen and (max-width: 767px) {
+  .margenes .margenesReseña .card-img-overlay .datosReseña .card-title {
+    color: white;
+    font-family: "Montserrat";
+    font-size: 0.7rem;
+    font-weight: normal;
+    font-style: normal;
+    letter-spacing: 0.05rem;
+    text-align: left;
+    width: 100%;
+    line-height: 1rem;
+    margin-bottom: 3%;
+  }
+}
+@media screen and (min-width: 1300px) {
+  .margenes .margenesReseña .card-img-overlay .datosReseña .card-text {
+    color: white;
+    font-family: "Montserrat";
+    font-size: 2rem;
+    font-weight: bold;
+    font-style: normal;
+    letter-spacing: 0.05rem;
+    text-align: left;
+    line-height: 1rem;
+    margin-bottom: 33%;
+    padding-top: 0.3rem;
+  }
+}
+@media screen and (max-width: 1300px) {
+  .margenes .margenesReseña .card-img-overlay .datosReseña .card-text {
+    color: white;
+    font-family: "Montserrat";
+    font-size: 1.8rem;
+    font-weight: bold;
+    font-style: normal;
+    letter-spacing: 0.05rem;
+    text-align: left;
+    line-height: 1rem;
+    margin-bottom: 22%;
+    padding-top: 0.3rem;
+  }
+}
+@media screen and (max-width: 767px) {
+  .margenes .margenesReseña .card-img-overlay .datosReseña .card-text {
+    color: white;
+    font-family: "Montserrat";
+    font-size: 1.3rem;
+    font-weight: bold;
+    font-style: normal;
+    letter-spacing: 0.05rem;
+    text-align: left;
+    line-height: 1rem;
+    margin-bottom: 15%;
+    padding-top: 0.3rem;
+  }
+}
+@media screen and (min-width: 1000px) {
+  .margenes .margenesReseña .reseñaDisplay {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+    padding-left: 0%;
+    padding-right: 0%;
+  }
+}
+@media screen and (max-width: 1000px) {
+  .margenes .margenesReseña .reseñaDisplay {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+    padding-left: 0%;
+    padding-right: 0%;
+    margin-top: 5%;
+  }
+}
+@media screen and (min-width: 576px) {
+  .margenes .margenesReseña .reseñaDisplay .tituloReseña {
+    font-family: "hatton";
+    font-size: 5rem;
+    font-weight: bold;
+    font-style: normal;
+    text-align: left;
+    line-height: 5.5rem;
+    width: 100%;
+  }
+}
+@media screen and (max-width: 576px) {
+  .margenes .margenesReseña .reseñaDisplay .tituloReseña {
+    font-family: "hatton";
+    font-size: 4rem;
+    font-weight: bold;
+    font-style: normal;
+    text-align: left;
+    line-height: 4.3rem;
+    width: 100%;
+  }
+}
+@media screen and (max-width: 400px) {
+  .margenes .margenesReseña .reseñaDisplay .tituloReseña {
+    font-family: "hatton";
+    font-size: 2.8rem;
+    font-weight: bold;
+    font-style: normal;
+    text-align: left;
+    line-height: 3.5rem;
+    width: 100%;
+  }
+}
+.margenes .margenesReseña .reseñaDisplay .textoReseña {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  width: 95%;
+}
+@media screen and (min-width: 767px) {
+  .margenes .margenesReseña .reseñaDisplay .textoReseña .textoBold {
+    color: #8400EC;
+    font-family: "Montserrat";
+    font-size: 1.3rem;
+    font-weight: bold;
+    font-style: normal;
+    letter-spacing: 0.05rem;
+    text-align: left;
+    width: 100%;
+    line-height: 2rem;
+    font-size: 1.3rem;
+    line-height: 1.8rem;
+  }
+}
+@media screen and (max-width: 767px) {
+  .margenes .margenesReseña .reseñaDisplay .textoReseña .textoBold {
+    color: #8400EC;
+    font-family: "Montserrat";
+    font-size: 1.3rem;
+    font-weight: bold;
+    font-style: normal;
+    letter-spacing: 0.05rem;
+    text-align: left;
+    width: 100%;
+    line-height: 2rem;
+    font-size: 0.9rem;
+    line-height: 1.4rem;
+  }
+}
+@media screen and (min-width: 767px) {
+  .margenes .margenesReseña .reseñaDisplay .textoReseña .texto {
+    font-family: "Montserrat";
+    font-size: 1.3rem;
+    font-weight: normal;
+    font-style: normal;
+    letter-spacing: 0.05rem;
+    text-align: left;
+    width: 100%;
+    line-height: 2rem;
+    font-size: 1.3rem;
+    line-height: 1.8rem;
+  }
+}
+@media screen and (max-width: 767px) {
+  .margenes .margenesReseña .reseñaDisplay .textoReseña .texto {
+    font-family: "Montserrat";
+    font-size: 1.3rem;
+    font-weight: normal;
+    font-style: normal;
+    letter-spacing: 0.05rem;
+    text-align: left;
+    width: 100%;
+    line-height: 2rem;
+    font-size: 0.9rem;
+    line-height: 1.4rem;
+  }
+}
+@media screen and (min-width: 1000px) {
+  .margenes .grillaFormulario {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-areas: "imagenForm tituloFormulario" "imagenForm formulario";
+    height: 887px;
+    width: 100%;
+    margin-bottom: 11%;
+    overflow: hidden;
+  }
+}
+@media screen and (max-width: 1000px) {
+  .margenes .grillaFormulario {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-areas: "tituloFormulario" "formulario";
+    height: 777px;
+    width: 100%;
+    margin-bottom: 11%;
+    overflow: hidden;
+  }
+}
+.margenes .grillaFormulario .tituloFormulario {
+  grid-area: tituloFormulario;
+  font-family: "hatton";
+  font-size: 3.5rem;
+  font-weight: normal;
+  font-style: normal;
+  text-align: left;
+  margin-left: 7%;
+  width: 100%;
+}
+.margenes .grillaFormulario .imagenFormulario {
+  grid-area: imagenForm;
+  width: 90%;
+  height: 100%;
+  padding-left: 14%;
+  overflow: hidden;
+}
+.margenes .grillaFormulario .formulario {
+  grid-area: formulario;
+  margin-left: 7%;
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  align-content: end;
+}
+@media screen and (min-width: 576px) {
+  .margenes .grillaFormulario .formulario .form-label {
+    color: grey;
+    font-family: "Montserrat";
+    font-size: 1.5rem;
+    font-weight: normal;
+    font-style: normal;
+    letter-spacing: 0.05rem;
+    text-align: left;
+    line-height: 1.6rem;
+    margin-top: 3%;
+  }
+}
+@media screen and (max-width: 576px) {
+  .margenes .grillaFormulario .formulario .form-label {
+    color: grey;
+    font-family: "Montserrat";
+    font-size: 1.2rem;
+    font-weight: normal;
+    font-style: normal;
+    letter-spacing: 0.05rem;
+    text-align: left;
+    line-height: 1.6rem;
+    margin-top: 3%;
+  }
+}
+.margenes .grillaFormulario .formulario .form-text {
+  color: black;
+  font-family: "Montserrat";
+  font-size: 1.3rem;
+  font-weight: normal;
+  font-style: normal;
+  letter-spacing: 0.05rem;
+  text-align: left;
+  line-height: 1.4rem;
+}
+.margenes .grillaFormulario .formulario .botonForm {
+  border: solid 0.15rem #8400EC;
+  border-radius: 3rem;
+  padding-left: 3%;
+  padding-right: 1%;
+  overflow: hidden;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  align-items: center;
+  width: 67%;
+  height: 10%;
+  margin-top: 3%;
+  margin-bottom: 4%;
+  transition: background-color 1s;
+}
+.margenes .grillaFormulario .formulario .botonForm:hover {
+  background-color: #ebd5fc;
+}
+@media screen and (min-width: 576px) {
+  .margenes .grillaFormulario .formulario .botonForm .textoBoton {
+    color: #8400EC;
+    font-family: "Montserrat";
+    font-size: 1.5rem;
+    font-weight: bold;
+    font-style: normal;
+    letter-spacing: 0.03rem;
+    text-align: left;
+    text-decoration: none;
+    align-items: center;
+  }
+}
+@media screen and (max-width: 576px) {
+  .margenes .grillaFormulario .formulario .botonForm .textoBoton {
+    color: #8400EC;
+    font-family: "Montserrat";
+    font-size: 1.1rem;
+    font-weight: bold;
+    font-style: normal;
+    letter-spacing: 0.03rem;
+    text-align: left;
+    text-decoration: none;
+    align-items: center;
+  }
+}
+@media screen and (min-width: 400px) {
+  .margenes .grillaFormulario .formulario .botonForm .flechaDescubri {
+    height: 88%;
+  }
+}
+@media screen and (max-width: 400px) {
+  .margenes .grillaFormulario .formulario .botonForm .flechaDescubri {
+    height: 60%;
+  }
+}
+
+/*footer*/
+.footer .subtituloF {
+  color: white;
+  font-family: "Montserrat";
+  font-size: 1.5rem;
+  font-weight: bold;
+  font-style: normal;
+  letter-spacing: 0.5px;
+  margin: 0%;
+  padding: 0%;
+}
+.footer .textoChicoF {
+  list-style-type: none;
+  text-decoration: none;
+  color: white;
+  font-family: "Montserrat";
+  font-size: 1.3rem;
+  font-weight: lighter;
+  font-style: normal;
+  letter-spacing: 0.05rem;
+  text-align: left;
+  line-height: 2.2rem;
+  margin: 0%;
+  padding: 0%;
+}
+
+/*# sourceMappingURL=styles.css.map */
