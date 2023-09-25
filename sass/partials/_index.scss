@@ -25,7 +25,7 @@
                                   "titulo titulo libro libro"
                                   "titulo titulo libro libro"
                                   ". . libro libro"
-                                  "detalle detalle libro libro";
+                                  "detalle . libro libro";
                                   grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
                                   height: 766px;
                                   padding-top: 3%;
@@ -48,6 +48,8 @@
                                                                 font-style: bold;
                                                                 text-align: left;
                                                                 line-height: 7rem;
+                                                                margin-top: 5%;
+                                                                
                                         }
 
                                         @include bigTabletMax {font-family: "hatton";
@@ -106,7 +108,7 @@
                                           font-style: normal;
                                           letter-spacing: 0.05rem;
                                           text-align: left;
-                                          line-height: 1rem;
+                                          line-height: 3rem;
                                           margin-right: 0.4rem;
                                           margin-top: 25%;
                                 }
@@ -117,7 +119,7 @@
                                               font-style: normal;
                                               letter-spacing: 0.05rem;
                                               text-align: left;
-                                              width: 100%;
+                                              width: 60%;
                                               line-height: 2rem;
                                               margin-bottom: 0%;
                                 }
@@ -161,7 +163,7 @@
                           padding: 20px 20px 5px 0px;
                           transition: transform 0.5s, opacity 0.9s;
 
-                          &:hover{transform: rotate(6deg);
+                          &:hover{transform: rotate(4deg);
                                   opacity: 77%;
                           }
                 }

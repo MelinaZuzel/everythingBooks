@@ -463,7 +463,7 @@
   .margenes .inicio {
     grid-area: main;
     display: grid;
-    grid-template-areas: "titulo titulo libro libro" "titulo titulo libro libro" "titulo titulo libro libro" ". . libro libro" "detalle . libro libro";
+    grid-template-areas: "titulo titulo libro libro" "titulo titulo libro libro" "titulo titulo libro libro" ". . libro libro" "detalle detalle libro libro";
     grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
     height: 766px;
     padding-top: 3%;
@@ -490,7 +490,6 @@
     font-style: bold;
     text-align: left;
     line-height: 7rem;
-    margin-top: 5%;
   }
 }
 @media screen and (max-width: 900px) {
@@ -550,7 +549,7 @@
   font-style: normal;
   letter-spacing: 0.05rem;
   text-align: left;
-  line-height: 3rem;
+  line-height: 1rem;
   margin-right: 0.4rem;
   margin-top: 25%;
 }
@@ -561,7 +560,7 @@
   font-style: normal;
   letter-spacing: 0.05rem;
   text-align: left;
-  width: 60%;
+  width: 100%;
   line-height: 2rem;
   margin-bottom: 0%;
 }
@@ -607,7 +606,7 @@
   transition: transform 0.5s, opacity 0.9s;
 }
 .margenes .grilla .articulo:hover {
-  transform: rotate(4deg);
+  transform: rotate(6deg);
   opacity: 77%;
 }
 
@@ -1540,132 +1539,6 @@
   width: 100%;
   line-height: 1.3rem;
 }
-@media screen and (min-width: 1000px) {
-  .margenes .detalleLibro .boton {
-    background-color: white;
-    border: solid 0.15rem #8400EC;
-    border-radius: 3rem;
-    padding-left: 4%;
-    padding-right: 2%;
-    overflow: hidden;
-    display: flex;
-    flex-flow: row wrap;
-    justify-content: space-between;
-    align-items: center;
-    width: 40%;
-    height: 7%;
-  }
-}
-@media screen and (max-width: 1000px) {
-  .margenes .detalleLibro .boton {
-    background-color: white;
-    border: solid 0.15rem #8400EC;
-    border-radius: 3rem;
-    padding-left: 4%;
-    padding-right: 2%;
-    overflow: hidden;
-    display: flex;
-    flex-flow: row wrap;
-    justify-content: space-between;
-    align-items: center;
-    width: 80%;
-    height: 12%;
-  }
-}
-@media screen and (max-width: 767px) {
-  .margenes .detalleLibro .boton {
-    background-color: white;
-    border: solid 0.15rem #8400EC;
-    border-radius: 3rem;
-    padding-left: 3%;
-    padding-right: 1.5%;
-    overflow: hidden;
-    display: flex;
-    flex-flow: row wrap;
-    justify-content: space-between;
-    align-items: center;
-    width: 33%;
-    height: 9%;
-  }
-}
-@media screen and (max-width: 485px) {
-  .margenes .detalleLibro .boton {
-    border: solid 0.15rem #8400EC;
-    border-radius: 3rem;
-    padding-left: 3%;
-    padding-right: 1.5%;
-    overflow: hidden;
-    display: flex;
-    flex-flow: row wrap;
-    justify-content: space-between;
-    align-items: center;
-    width: 88%;
-    height: 9%;
-  }
-}
-@media screen and (min-width: 485px) {
-  .margenes .detalleLibro .boton {
-    border: solid 0.15rem #8400EC;
-    border-radius: 3rem;
-    padding-left: 3%;
-    padding-right: 1.5%;
-    overflow: hidden;
-    display: flex;
-    flex-flow: row wrap;
-    justify-content: space-between;
-    align-items: center;
-    width: 66%;
-    height: 11%;
-    transition: background-color 1s, height 0.5s, width 0.5s;
-  }
-}
-.margenes .detalleLibro .boton:hover {
-  background-color: #ebd5fc;
-}
-.margenes .detalleLibro .boton:active {
-  height: 22%;
-  width: 99%;
-}
-@media screen and (min-width: 400px) {
-  .margenes .detalleLibro .boton .textoBoton {
-    color: #8400EC;
-    font-family: "Montserrat";
-    font-size: 1.2rem;
-    font-weight: bold;
-    font-style: normal;
-    letter-spacing: 0.03rem;
-    text-align: left;
-    text-decoration: none;
-    align-items: center;
-    width: 55%;
-  }
-}
-@media screen and (max-width: 400px) {
-  .margenes .detalleLibro .boton .textoBoton {
-    color: #8400EC;
-    font-family: "Montserrat";
-    font-size: 1.4rem;
-    font-weight: bold;
-    font-style: normal;
-    letter-spacing: 0.03rem;
-    text-align: left;
-    text-decoration: none;
-    align-items: center;
-    width: 55%;
-  }
-}
-@media screen and (min-width: 400px) {
-  .margenes .detalleLibro .boton .flechaDescubri {
-    height: 100%;
-    width: 27%;
-  }
-}
-@media screen and (max-width: 400px) {
-  .margenes .detalleLibro .boton .flechaDescubri {
-    height: 100%;
-    width: 26%;
-  }
-}
 .margenes .containerPunteo {
   margin-top: 10%;
 }
@@ -2277,10 +2150,8 @@
     grid-template-areas: "imagenForm tituloFormulario" "imagenForm formulario";
     height: 887px;
     width: 100%;
-    margin-bottom: 3%;
+    margin-bottom: 11%;
     overflow: hidden;
-    border-top: solid 0.1rem #e5e5e5;
-    padding-top: 4%;
   }
 }
 @media screen and (max-width: 1000px) {
@@ -2438,4 +2309,4 @@
   padding: 0%;
 }
 
-/*# sourceMappingURL=styles.css.map */
+/*# sourceMappingURL=styles.css%7D.map */

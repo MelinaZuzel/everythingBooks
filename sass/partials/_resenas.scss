@@ -373,8 +373,12 @@
                                                   "imagenForm formulario";
                                                   height: 887px;
                                                   width: 100%;
-                                                  margin-bottom: 11%;
+                                                  margin-bottom: 3%;
                                                   overflow: hidden;
+                                                  border-top: solid 0.1rem map-get($colores , "grisClaro") ;
+                                                  padding-top: 4%;
+                                                  
+                                                  
                            }
 
                            @include smallDeskMax {display: grid;

@@ -145,9 +145,127 @@
 
                                 .texto{@include textoMobile
                                        }
+
+                                
                             
                    }
-            
+                   .boton {@include smallDeskMin {background-color: map-get($colores , "blanco");
+                                                  border: solid $borde map-get($colores , "violeta");
+                                                  border-radius: $radio;
+                                                  padding-left: 4%;
+                                                  padding-right: 2%;
+                                                  overflow: hidden;
+                                                  display: flex;
+                                                  flex-flow: row wrap;
+                                                  justify-content:space-between;
+                                                  align-items: center;
+                                                  width: 40%;
+                                                  height: 7%;
+                           }
+
+                           @include smallDeskMax{background-color: map-get($colores , "blanco");
+                                                 border: solid $borde map-get($colores , "violeta");
+                                                 border-radius: $radio;
+                                                 padding-left: 4%;
+                                                 padding-right: 2%;
+                                                 overflow: hidden;
+                                                 display: flex;
+                                                 flex-flow: row wrap;
+                                                 justify-content:space-between;
+                                                 align-items: center;
+                                                 width: 80%;
+                                                 height: 12%;
+                                                                                      
+                           }
+
+                           @include tabletMax{background-color: map-get($colores , "blanco");
+                                              border: solid $borde map-get($colores , "violeta");
+                                              border-radius: $radio;
+                                              padding-left: 3%;
+                                              padding-right: 1.5%;
+                                              overflow: hidden;
+                                              display: flex;
+                                              flex-flow: row wrap;
+                                              justify-content:space-between;
+                                              align-items: center;
+                                              width: 33%;
+                                              height: 9%;
+                           }
+                                
+
+
+                            @include smallMobileMax{border: solid $borde map-get($colores , "violeta");
+                                                    border-radius: $radio;
+                                                    padding-left: 3%;
+                                                    padding-right: 1.5%;
+                                                    overflow: hidden;
+                                                    display: flex;
+                                                    flex-flow: row wrap;
+                                                    justify-content:space-between;
+                                                    align-items: center;
+                                                    width: 88%;
+                                                    height: 9%;
+
+                            }
+
+                            @include smallMobileMin{border: solid $borde map-get($colores , "violeta");
+                                                    border-radius: $radio;
+                                                    padding-left: 3%;
+                                                    padding-right: 1.5%;
+                                                    overflow: hidden;
+                                                    display: flex;
+                                                    flex-flow: row wrap;
+                                                    justify-content:space-between;
+                                                    align-items: center;
+                                                    width: 66%;
+                                                    height: 11%;
+                                                    transition: background-color 1s, height 0.5s, width 0.5s;    
+                            }
+
+                                                                
+                            &:hover{background-color: map-get($colores , "lila");
+                            }
+                            
+                            &:active{height: 22%;
+                                    width: 99%;
+                            }
+
+
+                            .textoBoton{@include smallMin{color: map-get($colores , "violeta");
+                                                              font-family: 'Montserrat';
+                                                              font-size: 1.2rem;
+                                                              font-weight: bold;
+                                                              font-style: normal;
+                                                              letter-spacing: 0.03rem;
+                                                              text-align: left;
+                                                              text-decoration: none;
+                                                              align-items: center;
+                                                              width: 55%;
+                                            }
+
+                                            @include smallMax {color: map-get($colores , "violeta");
+                                                               font-family: 'Montserrat';
+                                                               font-size: 1.4rem;
+                                                               font-weight: bold;
+                                                               font-style: normal;
+                                                               letter-spacing: 0.03rem;
+                                                               text-align: left;
+                                                               text-decoration: none;
+                                                               align-items: center;
+                                                               width: 55%;
+                                            }       
+
+                            }
+
+                                                                
+
+                            .flechaDescubri{@include smallMin{height: 100%;
+                                                              width: 27%;}
+
+                                             @include smallMax{height: 100%;
+                                                               width: 26%;}
+                            }
+                    } 
                 
                 
          }     
