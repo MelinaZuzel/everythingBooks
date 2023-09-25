@@ -273,7 +273,7 @@
     flex-flow: row wrap;
     justify-content: space-between;
     align-items: center;
-    width: 72%;
+    width: 100%;
     height: 16%;
   }
 }
@@ -1500,7 +1500,7 @@
 @media screen and (max-width: 576px) {
   .margenes .detalleLibro .textoLibro .tituloLightChico {
     font-family: "hatton";
-    font-size: 2.5rem;
+    font-size: 1.8rem;
     font-weight: normal;
     font-style: normal;
     text-align: left;
